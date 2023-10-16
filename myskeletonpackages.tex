@@ -1,0 +1,60 @@
+%http://tex.stackexchange.com/questions/119905/insert-multiple-figures-in-latex
+
+\usepackage[nomessages]{fp}    %mjm   needed for chemfig and mol2chemfig computed angles  
+\usepackage{siunitx}        %mjm  appendix table subsections  
+%\usepackage{morefloats}        %mjm   saving up figs for the end   
+% fking incompatibvle fuxk ing floatrow 
+%\usepackage{float}        %mjm  appendix table subsections  
+\usepackage{pbox}        %mjm box off junk  
+\usepackage{comment}        %mjm  see the build options  
+\usepackage{framed}        %mjm box off junk  
+\usepackage{lgrind}        % convert program listings to a form includable in a LaTeX document
+% comment out for biblatex test
+\usepackage{chapterbib}    % allows a bibliography for each chapter (each labguide has it's own)
+%\usepackage{biblatex}   
+\usepackage{color}         % produces boxes or entire pages with colored backgrounds
+\usepackage{graphics}      % standard graphics specifications
+\usepackage[pdftex]{graphicx}      % alternative graphics specifications
+%\usepackage{graphicx}      % alternative graphics specifications
+\usepackage{longtable}     % helps with long table options
+\usepackage{epsf}          % old package handles encapsulated post script issues
+\usepackage{bm}            % special 'bold-math' package
+\usepackage{url}            % path for stupid jobname   
+%\usepackage{asymptote}     % For typesetting of mathematical illustrations
+\usepackage{thumbpdf}
+\usepackage[colorlinks=true]{hyperref}  % this package should be added after all others
+%\usepackage[draft=false, x-bib-pages=\input{\mjmbasename.last_page}, colorlinks=true]{hyperref}  % this package should be added after all others
+%\usepackage[draft=false, x-bib-pages=\input{allbib.last_page}, colorlinks=true]{hyperref}  % this package should be added after all others
+                                        % use as follows: \url{http://web.mit.edu/8.13}
+
+%http://tex.stackexchange.com/questions/12676/add-notes-under-the-table
+%\usepackage{booktabs,caption,fixltx2e}
+% not work with subfig????
+\usepackage[CaptionAfterwards]{fltpage}
+\usepackage{lipsum}
+
+% this does not  work .... 
+%\usepackage[utf8]{inputenc}
+%\usepackage{tabulary}
+\usepackage[para,online,flushleft]{threeparttable}
+%\usepackage{threeparttable}
+
+%\usepackage{chemfig}
+\usepackage[version=3]{mhchem}        %  
+\usepackage{mol2chemfig}
+% chemfig vriables maybe
+\usepackage{xstring}        %mjm  appendix table subsections  
+%\usepackage{chemformula}
+% \usepackage{chemmacros}
+\usepackage{floatrow}
+\usepackage{fancyhdr}
+%  underscore in jobmane f 
+% https://latex.org/forum/viewtopic.php?t=2975
+% this also messes up pdftotext  
+%\usepackage[T1]{fontenc}
+\usepackage{dcolumn} % https://tex.stackexchange.com/questions/2746/aligning-numbers-by-decimal-points-in-table-columns
+
+\usepackage{catchfile} % mjmaddbib needs to read page count file
+\pagestyle{fancy}
+
+

@@ -1,0 +1,109 @@
+\ifdefined\grad
+\else
+\newcommand{\grad}{\nabla}
+\fi
+\newcommand{\laplace}{\nabla^{2}}
+\newcommand{\mjmdx}[2]{\left(\frac{\partial #1 }{\partial #2} \right) }
+\newcommand{\mjmdxop}[2]{\frac{\partial  }{\partial #2}\left( #1 \right) }
+\newcommand{\mjmdxdx}[2]{\left(\frac{\partial^{2} #1 }{\partial #2^{2}} \right) }
+\newcommand{\mjmdxo}[2]{\frac{\partial #1 }{\partial #2} }
+\newcommand{\mjmdxx}[2]{\left(\frac{\partial^{2} #1 }{\partial {#2}^{2}} \right) }
+\newcommand{\mjmdxy}[3]{\left(\frac{\partial^{2} #1 }{\partial {#2}\partial{#3}} \right) }
+\newcommand{\mjmdxyn}[5]{\left(\frac{\partial^{#1} }{\partial^{#2} {#3}\partial^{#4}{#5}} \right) }
+\newcommand{\mjmdsq}[2]{\left(\frac{\partial #1 }{\partial #2} \right) ^{2}}
+\newcommand{\mjmupdated}[2]{\p  Updated on $#1$ from source #2 \p }
+% see tug mail archives, based on discussion 
+%\bool_new:N \l_tmpa_bool
+\newif\ifbibstarted
+\newif\ifbibnamed
+\bibstartedfalse
+\bibnamedfalse
+\newcommand{\mjmtotalbib}{}
+%\def\foo{}
+\newcommand{\mjmsummabib}[2]{
+%\renewcommand{\mjmtotalbib}{ \mjmtotalbib, #1 = #2 }
+%\let\foo{ #1 = #2}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{mjmaddbib.tex}
+\input{mjmlistings.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{\mjmaddbib}[2]{\hypersetup{ pdfinfo={ x-bib-#1 = {#2}}}\mjmsummabib{#1}{#2}}
+
+\newcommand{\mjmaddbibonly}[2]{\hypersetup{ pdfinfo={ x-bib-#1 = {#2}}}}
+\newcommand{\mjmaddbibe}[2]{\hypersetup{ pdfinfo= x-bib-#1 = #2}}
+
+\newcommand{\mjmtable}[2]{
+\begin{table}[H] \centering
+\begin{tabular}{#1}
+#2
+\end{tabular}
+\end{table}
+
+}
+% for archiving and file list 
+% David Carlisle You can use   \textbf{\detokenize{ pmg_ratios.svg}} \IfFileExists{ pmg_ratios.sv}{yes}{no} to make the tokens safe for typesetting in text mode.
+
+
+\newcommand{\mjmusesitem}[2]{
+
+%\item {\bf $ #1 $  } : #2  % 1 is #1 and 2 is  #2 xxx 
+\item {{\detokenize{ #1 } }} : #2  % 1 is #1 and 2 is  #2 xxx 
+\IfFileExists{#1}{}{{\bf not found} }
+
+} % mjmuses
+
+\newcommand{\mjmreleasewarning}
+{
+{\bf This is a draft and has not been peer reviewed or completely proof 
+read but released in some state where it seems worthwhile given 
+time or other constraints. Typographical errors are quite likely 
+particularly in manually entered numbers. This work may 
+include  output from software which has not been fully debugged.  
+For information only, not for use for any particular purpose see
+fuller disclaimers in the text.  Caveat Emptor.}
+}
+
+\newcommand{\mjmwarningtoo}
+{\bf {This is a draft which may not have been fully proofread and certainly
+not peer reviewed. Read the disclaimers and take them seriously.
+The reader is assumed familiar with the related literature and
+controversial issues. For information and thought only not intended
+for any particular purpose. Caveat Emptor  }}
+
+\newcommand{\mjmwarntopic}
+{\bf {  This work addresses a controversial topic and likely advances one
+or more viewspoints that are not well accepted in an attempt to
+resolve confusion.   
+The reader is assumed familiar with the related literature and
+controversial issues and in any case should seek additional 
+input from sources the reader trusts likely with differing opinions. 
+For information and thought only not intended
+for any particular purpose. Caveat Emptor  }}
+
+
+\newcommand{\mjmwarnfeed}
+{\bf { Note that any item given to a non-human must be checked for safety alone and in combination with other ingredients or medicines  for that animal. Animals including dogs and cats have decreased tolerance for many common ingredients in things meant for human consumption. }}
+
+
+\newcommand{\mjmwarnme}
+{\bf { I am not a veterinarian or a doctor or health care professional
+ and this is not particular advice
+for any given situation.  Read the disclaimers in the appendicies or text, take them seriously and take prudent steps 
+to evaluate this information. 
+ }}
+
+\newcommand{\mjmexplainbib}
+{{The release may use an experimental bibliography code that
+is not designed to achieve a particular format but to
+allow multiple links to reference works with modifications
+to the query string to allow identification of the citing
+work for tracking purposes. This may be useful for a bill-of-materials
+and purchases later.
+}}
+
+
+
+
+

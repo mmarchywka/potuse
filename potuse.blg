@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: potuse.aux
+The style file: plainurl.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Database file #1: potuse.bib
+Warning--entry type for "Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015" isn't style-file defined
+--line 4366 of file potuse.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Database file #2: mjm_tr.bib
+Database file #3: releases.bib
+Database file #4: dailysnapx.bib
+Repeated entry---line 1466 of file dailysnapx.bib
+ : @article{Barazani2000
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1499 of file dailysnapx.bib
+ : @article{Renga_DOnofrio_Pariano_Bridging_host_microbiota_2023
+ :                                                              ,
+I'm skipping whatever remains of this entry
+Warning--empty year in Aparna_Meignanalakshmi_Comparison_power_generation_
+Warning--can't use both author and editor fields in Bartolini2003
+Warning--empty year in PMC10229084
+Warning--can't use both author and editor fields in Kyogashima2001
+Warning--can't use both author and editor fields in Moroni1991
+Warning--can't use both author and editor fields in Politi1999
+Warning--empty year in PMC9004399
+Warning--empty journal in Schultek_Nikki_Schultek_LinkedIn_2023
+Warning--empty year in VanAssche_Assche_
+Warning--empty year in Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_
+You've used 162 entries,
+            2760 wiz_defined-function locations,
+            1932 strings with 95760 characters,
+and the built_in function-call counts, 92857 in all, are:
+= -- 9816
+> -- 5507
+< -- 46
++ -- 2192
+- -- 2014
+* -- 7274
+:= -- 14476
+add.period$ -- 653
+call.type$ -- 162
+change.case$ -- 1485
+chr.to.int$ -- 0
+cite$ -- 172
+duplicate$ -- 2377
+empty$ -- 6401
+format.name$ -- 2014
+if$ -- 21675
+int.to.chr$ -- 0
+int.to.str$ -- 162
+missing$ -- 157
+newline$ -- 979
+num.names$ -- 327
+pop$ -- 1824
+preamble$ -- 1
+purify$ -- 1328
+quote$ -- 0
+skip$ -- 5191
+stack$ -- 0
+substring$ -- 2245
+swap$ -- 839
+text.length$ -- 46
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 638
+warning$ -- 10
+while$ -- 432
+width$ -- 165
+write$ -- 2249
+(There were 2 error messages)

@@ -1,0 +1,116 @@
+
+\iffalse
+@software{,
+  author = {Michael J Marchywka},
+  city = {Jasper GA 30143 USA},
+  title = { A one-file library for adding machine and human readable bibtex to an article },
+abstract={ A simple include file to make bibtex available 
+in a document in both machine and human readable format. 
+Machine readable is added to extended information 
+which can be read with tools such as exiftool ( https://exiftool.org/ ).
+While typically not complete at time of pdf creation,
+other tools such as toobib can be used to complete the citation
+and of course publishers may be able to modify it too as 
+more is known. The human readable form need not beincluded
+in document types not suited for that but then automated citation
+may still be easy.  
+See also some exchanges on the Texhax mailing list @tug.org },
+institution={},
+license={Knowledge sir should be free to all },
+publisher={Mike Marchywka},
+email={marchywka@hotmail.com},
+authorid={orcid.org/0000-0001-9237-455X},
+  filename = {mjmaddbib.tex},
+  url = {},
+  version = {0.0.0},
+  date-started = {}
+}
+
+<one line to give the program's name and a brief idea of what it does.>
+
+
+Conceived and written by Mike Marchywka from 2019 to present.
+See dates in individual code pieces as they were 
+generated from my wizards. 
+Copyright (C) <year> <name of author>
+
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+   A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+\fi
+
+%\usepackage[pdftex]{graphicx}      % alternative graphics specifications
+\usepackage{hyperref}      %
+
+
+\newcommand{\mjmstartbib}[2]
+{
+\def\mjmbibentry{@#1\{#2}
+\def\mjmbiboneentry{@#1\{#2}
+\def\mjmbibpre{x-bib{-}}
+\def\mjmday{\day}
+%\mjmaddbib{run-day}{\mjmday}
+%\mjmaddbib{run-month}{\expandafter\month}
+%\mjmaddbib{run-year}{\year}
+\mjmaddbib{filename}{\jobname}
+\mjmaddbib{run-date}{\today}
+}
+\newcommand{\mjmbibmunge}[1] {x-bib-#1}
+
+\newcommand{\mjmaddbib}[2]
+{
+{\hypersetup{pdfinfo={{\mjmbibmunge{#1}}={#2}}}}
+\edef\mjmbibentry{\unexpanded\expandafter{\mjmbibentry,}
+
+    #1 =\{#2\} }
+%\edef\mjmbiboneentry{\unexpanded\expandafter{\mjmbiboneentry,}
+\edef\mjmbiboneentry{\unexpanded\expandafter{\mjmbiboneentry,\linebreak}
+#1 =\{#2\}
+}
+
+} % mjmaddbib
+
+
+\newcommand{\mjmshowbib}
+{
+
+\mjmbibentry
+
+\}
+} % mjmshowbib
+
+\newcommand{\mjmshowbibone}
+{
+\mjmbiboneentry \}
+} % mjmshowbibone
+
+\newcommand{\mjmdonebib}
+{
+
+{\hypersetup{pdfinfo={\mjmbibmunge{bibtex}={\mjmshowbibone}}}}
+
+} % mjmdonebib
+

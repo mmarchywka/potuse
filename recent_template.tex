@@ -1,0 +1,79 @@
+
+% 2020-10-18 extract some new boilerplate 
+
+% https://tex.stackexchange.com/questions/121601/automatically-wrap-the-text-in-verbatim
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% utilitites
+
+\newcommand{\mjmblackbox}[2]{
+ \fbox{
+% thi does not ing work right 
+\begin{minipage}[t]{\textwidth}
+{ \centering{\bf{#1 : }} }
+\par
+#2
+\end{minipage}
+}
+}
+\newcommand{\mjmblackboxno}[2]{
+ \fbox{
+% thi does not ing work right 
+\begin{minipage}[t]{\textwidth}
+{ \centering{\bf{#1 : }} }
+#2
+\end{minipage}
+}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% biblio stuff
+
+
+
+\newcommand{\checkrel}[1]{%
+  \ifcsname#1\endcsname%
+\newcommand{\mjmstatus}{  public NOTES }
+\newcommand{\mjmversion}{\mjmrelease}
+  \else%
+\newcommand{\mjmstatus}{ NOT public NOTES }
+\newcommand{\mjmversion}{0.00}
+  \fi%
+}
+
+
+
+
+% https://tex.stackexchange.com/questions/18089/are-there-any-command-for-producing-the-bibtex-logo
+%\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand{\biblogo}{
+{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+{ }  }
+%\newcommand{\biblogo}{ Bibte{\it X}  { }  }
+\newcommand{\latexlogo}{ \LaTeX  { }  }
+\newcommand{\bomtexlogo}{ BomTe{\it X}  { }  }
+
+
+
+
+
+
+\newcommand{\mjmvirus}{SARS-Cov-2 }
+\newcommand{\mjmdisease}{covid-19 }
+\newcommand{\Mjmdisease}{Covid-19 }
+\newcommand{\mjmlogo}{ MUQED { }  }
+\newcommand{\mjmlinkedin}{ {\bf LinkedIn} { }  }
+
+
+
+

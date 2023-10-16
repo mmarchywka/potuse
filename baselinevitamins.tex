@@ -1,0 +1,100 @@
+% https://tex.stackexchange.com/questions/231551/using-ifdefined-on-csname-macros
+ \ifdefined\mjmstandalone%
+%
+\else%
+\newcommand{\mjmstandalone}[1]{%
+  \ifdefined\MJMTEXFRAG%
+% \ifcsname\MJMTEXFRAG\endcsname%
+   #1%
+  \fi%
+}
+  \fi%
+
+
+\begin{table}[H] \centering
+\begin{tabular}{|l|r|c|l|}
+\hline
+\multicolumn{4}{c}{Title}\\
+\hline
+Ingredient & Amount & Relevance & Refs/Notes \\
+\hline
+%Depakene ( valproate ) & 250mg/day & late onset AD & \\
+Lysine HCl  & 2600mg/day  & & rorate K/R  \\
+Arginine  HCl  & 1300mg every other  & & rotate K/R \\
+\hline
+Threonine   & 1300mg/day  & & \\
+\hline
+Leucine   & 650mg/day  & & rotate BCAA  \\
+Valine   & 800mg/day  & & rotate BCAA \\
+Isoleucine   & 800mg/ every few days  & & rotate BCAA \\
+\hline
+Methionine  & 250mg/ day  & & \\
+Histidine   & 340mg/ day  & & \\
+Tryptophan   & 500mg/ day  & & \\
+Phenylalanine   & 500mg/ day  & & not F+Y no BH4 \\
+Tyrosine   & 500mg/ day  & & not F+Y no BH4 \\
+Glutamine   & 0mg/ day  & & does not seem to help \\
+\hline
+Taurine  & 1800mg/ day  & & \\
+Lecithin   & 1800mg/ day  & & choline and emulsifire  \\
+citric acid    &   & &   \\
+acetic acid    &   & &   \\
+KCl    &   & &   \\
+benzoate &&& mix likely matters \\
+sorbitol &&&  absorption aid \\
+\hline
+vitamin K1   &   10mg/day   & & rotate lipid solubles    \\
+vitamin K2/MK4/MK7  &   10mg/day   & & mix probably matters    \\
+\hline
+zinc  &  every other day    & &   \\
+magnesium  & 400mg/day    & & see text, citrate+citrate or other   \\
+copper  &  5mg every other day    & &   \\
+Iodine   &  1mg every few days    & &  rotate SMVT  \\
+\hline
+\end{tabular}
+\caption{}
+%\label{}
+\end{table}
+
+
+\begin{table}[H] \centering
+\begin{tabular}{|l|r|c|l|}
+\hline
+\multicolumn{4}{c}{Title}\\
+\hline
+Ingredient & Amount & Relevance & Refs/Notes \\
+\hline
+%Depakene ( valproate ) & 250mg/day & late onset AD & \\
+%vitamin K2/MK4/MK7  &   10mg/day   & & mix probably matters    \\
+B-1   &   100mg/day   & &  \\
+B-2   &   400mg/day   & &  reactive, see text  \\
+B-3   &   100mg/day   & &   niacin may be better, see text  \\
+B-6   &   100mg/day   & &    \\
+B-12   &   1mg/ every few days  & & out compete cancer etc     \\
+folate   &   1mg/ every few days  & & out compete cancer etc     \\
+biotin   &   10mg/day  & & rotate SMVT     \\
+calcium pantothenate   &   500mg/day  & & rotate SMVT, beta-alanine ok too      \\
+lipoic acid   &   200mg/ every few days  & & rotate SMVT  \\
+\hline
+vitamin C  &  sporadic  & & avoid benzoate  \\
+vitamin A  &  sporadic  & & rotate lipid solubles  \\
+vitamin D  &  sporadic  & & rotate lipid solubles  \\
+\hline
+turkey  & & & \\
+chicken thigh  & & & \\
+ground beef 7-20 pct fat  & & & \\
+shrimp  & & & \\
+tuna  & & & \\
+salmon  & & & \\
+Eggland eggs  & & & \\
+spinach  & & & \\
+carrot  & & & \\
+garlic  & & & \\
+EV olive oil   & & & \\
+\hline
+\end{tabular}
+\caption{}
+%\label{}
+\end{table}
+
+

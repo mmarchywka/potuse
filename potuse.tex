@@ -1,0 +1,1841 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sample template for MIT Junior Lab Student Written Summaries
+% Available from http://web.mit.edu/8.13/www/Samplepaper/sample-paper.tex
+% Last Updated April 12, 2007
+% Adapted from the American Physical Societies REVTeK-4 Pages
+% at http://publish.aps.org
+
+\setlength{\paperheight}{11in}
+% http://tex.stackexchange.com/questions/74636/mla-package-and-thumbpdf
+\makeatletter
+\@namedef{ver@thumbpdf.sty}{}
+\makeatother
+\documentclass[aps,secnumarabic,balancelastpage,amsmath,amssymb,nofootinbib]{revtex4}
+
+\input{myskeletonpackages.tex}
+
+\newcolumntype{.}[1]{D{.}{.}{#1}}
+%\usepackage[maxfloats=30]{morefloats}   %mjm   saving up figs for the end   
+% no param on old version stuck at 36
+\usepackage{morefloats}        %mjm   saving up figs for the end   
+\usepackage{graphicx}        %mjm   saving up figs for the end   
+
+% will need modificaitons 
+\input{recent_template.tex}
+
+
+
+% https://tex.stackexchange.com/questions/121601/automatically-wrap-the-text-in-verbatim
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+
+% none of this fking fking works for a f F 
+\newcommand{\mjmverbatim}{lstlisting}
+\newcommand{\mjmbeginverbatim}{\begin{lstlisting}}
+\newcommand{\mjmendverbatim}{\end{lstlisting}}
+
+\newcommand{\mjmmangle}[1]{keep/#1}
+
+
+
+%# CHANGE VERSION AND STATUS MANUALLY 
+% need a draft/notes/release flag
+
+% https://tex.stackexchange.com/questions/5894/latex-conditional-expression
+%At the command-line, you can do \def\MYFLAG{} and then test if \MYFLAG is defined in your document (or an included style file) with \ifdefined\MYFLAG ... \else ... \fi.
+% needs trailing space for the sample bibtex doh
+% leading spaces mess up the entry thought 
+\def\xxmjmrelease{0.10 }
+\ifdefined\mjmrelease
+\newcommand{\mjmstatus}{ PUBLIC NOTES }
+\newcommand{\mjmversion}{\mjmrelease} %%%%%%%%%%%%%
+\newcommand{\mjmtrno}{MJM-2023-008}
+\newcommand{\mjmbib}{\mjmtrno-\mjmversion}
+\newcommand{\mjmstatuswarn}{{\bf{  }}   }
+% 2021-09-29 wanted version wth for brownie
+%\newcommand{\mjmbib}{\mjmtrno-\mjmversion-\mjmrelease}
+%\newcommand{\mjmbib}{\mjmtrno}
+\else
+\newcommand{\mjmstatus}{ NOT public NOTES }
+\newcommand{\mjmversion}{0.00} %%%%%%%%%%%%%
+\newcommand{\mjmtrno}{MJM-2023-008}
+%\newcommand{\mjmbib}{\mjmtrno-\mjmversion}
+\newcommand{\mjmbib}{\mjmtrno}
+%\newcommand{\mjmstatuswarn}{  }
+\newcommand{\mjmstatuswarn}{{\bf{This document is a non-public DRAFT and contents may be speculative or undocumented or simple musings and should be read as such.  }}   }
+\fi
+
+%\newcommand{\mjmstatus}{ NOT public NOTES }
+
+
+
+%\newcommand{\mjmtitle}{Potential Uses of Microbiome as Nutrient Diagnostic in Unresolved Diseases.}
+%\newcommand{\mjmtitle}{Tryptophan as a Unifying Component of Age Associated Diseases.}
+\newcommand{\mjmtitle}{Brain Microbiome : Make Your Garden Grow? Feed Your Head }
+
+\input{mycommands.tex}
+
+
+\newcommand{\mjmauthor}{Mike J Marchywka }
+\newcommand{\mjmmakedate}{2023-09-17 }
+\newcommand{\mjmbasename}{\jobname}
+%\newcommand{\mjmaddbio}{mjm_tr,releases}
+\newcommand{\mjmaddbio}{mjm_tr,releases,dailysnapx}
+%\newcommand{\mjmversion}{0.00}
+%\newcommand{\mjmtrno}{MJM-2023-008}
+%\newcommand{\mjmbibday}{17}
+%\newcommand{\mjmbibmo}{09}
+%\newcommand{\mjmbibyear}{2023}
+
+% the build script changes these to creation day doh 
+\newcommand{\mjmbibday}{17}
+\newcommand{\mjmbibmo}{09}
+\newcommand{\mjmbibyear}{2023}
+
+
+\newcommand{\mjmmakebibday}{\number\day}
+\newcommand{\mjmmakebibmo}{\number\month}
+\newcommand{\mjmmakebibyear}{\number\year}
+
+\newcommand{\mjmbibtype}{techreport}
+
+\newcommand{\mjmbibname}{marchywka-\mjmbib}
+\mjmstartbib{\mjmbibtype}{\mjmbibname}
+
+
+\newcommand{\mjmemail}{marchywka@hotmail.com}
+%\newcommand{\mjmaddr}{306 Charles Cox , Canton GA 30115}
+\newcommand{\mjmaddr}{44 Crosscreek Trail, Jasper GA 30143}
+\mjmaddbib{title}{\mjmtitle}
+\mjmaddbib{author}{\mjmauthor}
+\mjmaddbib{type}{\mjmbibtype}
+%\mjmaddbib{name}{marchywka-\mjmbib}
+\mjmaddbib{name}{\mjmbibname}
+\mjmaddbib{number}{\mjmtrno}
+\mjmaddbib{version}{\mjmversion}
+\mjmaddbib{institution}{not institutionalized, independent }
+\mjmaddbib{address}{ \mjmaddr}
+\mjmaddbib{date}{\today}
+\mjmaddbib{startdate}{\mjmbibyear -\mjmbibmo -\mjmbibday }
+%\mjmaddbib{day}{\mjmbibday}
+%\mjmaddbib{month}{\mjmbibmo}
+%\mjmaddbib{year}{\mjmbibyear}
+\mjmaddbib{day}{\mjmmakebibday}
+\mjmaddbib{month}{\mjmmakebibmo}
+\mjmaddbib{year}{\mjmmakebibyear}
+
+\mjmaddbib{author1email}{\mjmemail}
+\mjmaddbib{contact}{\mjmemail}
+\mjmaddbib{author1id}{orcid.org/0000-0001-9237-455X}
+\CatchFileEdef\mjmpages{\mjmbasename.last_page}{\endlinechar=-1\relax}
+% TODO FIXME add this to the skeleton text 
+%\mjmaddbib{pages}{ \input{\mjmbasename.last_page}}
+\mjmaddbib{pages}{ \mjmpages}
+%\mjmaddbib{filename}{\mjmbasename}
+%\mjmaddbib{bibtex}{\mjmfullbib}
+\mjmdonebib
+
+\lhead{\mjmauthor,  \mjmtrno }
+
+
+%\lhead{M Marchywka,  \mjmtrno }
+%\rhead{ \mjmversion not for public release}
+%\rhead{ { \today }  v. \mjmversion for release without review }
+%\rhead{ { \today }  v. \mjmversion NOT public DRAFT }
+%\rhead{ { \today }  v. \mjmversion { }  NOT public NOTES }
+\rhead{ { \today }  v. \mjmversion { }  \mjmstatus }
+
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
+
+
+%%%% build flags 
+%\newlength{\desttabw}  \setlength{\desttabw}{4in}
+\newlength{\desttabw}  \setlength{\desttabw}{\textwidth}
+\newlength{\chainwidth}  \setlength{\chainwidth}{.4\textwidth }
+\newlength{\slantwidth}  \setlength{\slantwidth}{.2\textwidth }
+\newlength{\subfigwidth}  \setlength{\subfigwidth}{.3\textwidth }
+\newlength{\fullfigwidth}  \setlength{\fullfigwidth}{.8\textwidth }
+\newlength{\subwfigwidth}  \setlength{\subwfigwidth}{.75\textwidth }
+\newlength{\subwfigwidthrot}  \setlength{\subwfigwidthrot}{\textwidth }
+\newlength{\myboxwidth}  \setlength{\myboxwidth}{.3\textwidth }
+\newlength{\picwidth}  \setlength{\picwidth}{.4\textwidth }
+% set to center for nowmal output 
+\newcommand{\destflushtab}{flushleft}
+\includecomment{mdpicomment}
+\excludecomment{draftcomment}
+\excludecomment{badmathcomment}
+\excludecomment{showworkcomment}
+% this does not fing work ... 
+
+\newcommand{\mjmed}[1]{
+%\begin{mjmedx} 
+[ mjm : #1   ]
+%\end{mjmedx} 
+}  
+
+% thinking outload
+\newcommand{\mjmtolx}[1]{}
+\newcommand{\mjmtolxx}[1]{}
+\newcommand{\mjmtol}[1]{
+ \fbox{  
+% thi does not ing work right 
+\begin{minipage}[t]{\textwidth}
+{ \centering{\bf{Thinking outloud}} }
+\par   
+#1 
+\end{minipage} 
+}
+}
+
+\newcommand{\mjmpicture}[3]
+{
+\begin{figure}[H]
+{ \includegraphics[height=3in,width=4in]{keep/#1} }
+\caption{#2}
+\label{fig:#3}
+\end{figure}
+} % mjmpicture
+
+
+\newcommand{\mjmaside}[1]{
+ \fbox{  
+% thi does not ing work right 
+\begin{minipage}[t]{\textwidth}
+{ \centering{\bf{Aside: }} }
+\par   
+#1 
+\end{minipage} 
+}
+}
+
+
+
+
+\newcommand{\mjmgraphics}[1]{#1 }
+\newcommand{\mjmfullplot}[1]{\includegraphics[width=\fullfigwidth]{#1}}
+%\newcommand{\mjmincludeplot}[1]{\includegraphics[width=\fullfigwidth]{#1}}
+%\newcommand{\mjmincludeplot}[1]{\includegraphics[width=\subfigwidth]{#1}}
+\newcommand{\mjmincludeplot}[1]{\includegraphics[height=3in,width=\fullfigwidth]{#1}}
+
+% include here as likely to be doc specific 
+%\newcommand{\mjmreffig}[1]{Fig. \ref{#1}}
+\newcommand{\mjmreffig}[1]{Fig. \ref{fig:#1}}
+\newcommand{\mjmreftab}[1]{Table  \ref{tab:#1}}
+\newcommand{\mjmrefapp}[1]{Appendix   \ref{appendix:#1}}
+
+
+%cp yyy2.pdf ~/d/latex/keep/pp20171124biotin.pdf
+\newcommand{\mjmdatedplot}[1] 
+{ \includegraphics[height=3in,width=\fullfigwidth]{keep/pp20171124#1} }
+% right now there are too many figs to save for the end apaprently
+% hard limit is 36
+\newcommand{\mjmbeginfigure}{\begin{figure}[H] }
+%\newcommand{\mjmbeginfigure}{\begin{figure}[p] }
+\newcommand{\mjmfigure}[1]{
+%\begin{figure}[H]
+\mjmbeginfigure
+
+#1 
+
+\end{figure}
+}
+%\extrafloats{100}
+
+\newcommand{\mjmlisting}[1]
+{
+\begin{lstlisting} 
+#1 
+\end{lstlisting}
+}
+
+\newcommand{\mjmold}[1]{ } 
+
+
+
+\newcommand{\mjmeqn}[1]{\begin{equation} #1 \end{equation}  } 
+
+
+
+
+
+\begin{document}
+
+\title{\mjmtitle}
+\author         {Mike Marchywka}
+\email          {\mjmemail}
+\thanks{ to cite  or credit this work, see bibtex in \ref{appendix:citing} } 
+\date{\today}
+\affiliation{\mjmaddr}
+
+\mjmblackboxno{Release Notes  xxxx-xx-xx : }{
+This is largely an alternative analysis of
+a simple differential abundance measure
+between two groups of brains from one recent
+publication
+\cite{10.3389/fcimb.2023.1123228}
+but it points to ambiguity
+inherent in a lot of data and puts forth a set of realistic
+considerations for alternatives. 
+The title derives from literature on symbiosis with plants
+related to a surprising number of the organisms considered.
+Although "Feed your head" may be importan too :) 
+As soon as I can figure out how to download the Bioproject data
+I hope to look at sequence level analysis. This may be  another
+case of the mixed taxonomy getting in the way of seeing
+what is really there.  A good database on metabolism
+may be helpful too.  
+
+\mjmreleasewarning
+
+\mjmstatuswarn
+
+\mjmexplainbib
+
+%\mjmwarnfeed
+
+\mjmwarnme
+
+\mjmwarntopic
+
+\bf{ Readers may experience disclaimer fatigue. Doe not proceed if you
+are weary or unable to think clearly}
+
+
+}
+\begin{abstract}
+A recent work comparing the the post-mortem brain microbiome
+of those who died with Alzheimer's to controls 
+\cite{10.3389/fcimb.2023.1123228}
+provides  excellent differential mesurement of the two
+states.
+The authors mostly interpreted results
+to support a causal role for the associated 
+organisms in disease progression
+.
+They found Staphylococcus epidermidis, among others,  to be more
+common in AD brains and this known pathogen may be
+one of a group of causative or contributory agents 
+yet to be characterized. 
+Their results  also suggest the diseased brain has
+different  
+nutritional or metabolic status .
+The AD brains had lower abundances of   organisms 
+prone to overgrowth
+in benzoate rich conditions ( Pseudomonas )
+while relative abundance gains were observed for  organisms 
+thought to benefit from low Trp or 5HT (Cutibacterium ) 
+and higher iron ( Acidovorax )  and methanol ( Methylbacterium ) . 
+This work's title derives from the surprising literature linking
+many of these organisms to plant nutrient uptake which may or may not
+be relevant in the brain. 
+There is also the 
+possibility the AD brains lost  beneficial organisms acquired
+as early as  conception or the  peri-natal period as 
+organisms  enhancing nutrient uptake in plants 
+(such as Acinetobacter junii ) 
+and  dosed during fetal/peri-natal period during conception,
+delivery, or breast feeding were  less abundant.
+
+The possibility of symbiotics  suggests caution in antibiotic
+usage while the growth of iron and methanol responsive organisms
+helps validate their results as being consistent with
+known properties of the disease state such as microbleed and
+endogenous methanol disturbances. Interestingly, if
+methanol is the chief driver that may still be of microbial
+origin but possible from the GI tract.  
+
+The nutrients highlighted by these organisms tend to
+support earlier interest in neurotransmitter precursor
+amino acids as well as vitamin K. The suggestions of nutrient
+uptake enhancing bacteria points to the need however
+to work with non-optimal  physical properties such as solubility.
+The prominence of methanol organisms may also point
+to SAM and methionine which I had not considered before. 
+
+My earlier work appears on the right track although histidine
+is not implicated as an issue while endogenous 
+methanol production may be important. 
+If the organisms in the healthy brain are truly symbiotic,
+the notion of absorption aids may have merit in general
+and in the GI tract ( surfactants added to diet ). 
+One simple intervention to explore is increased stomach
+acidity, not equivalent to  abstaining from PPI's, 
+ as a way to improve nutrient uptake and minimize methanol production. 
+
+\end{abstract}
+
+
+
+
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction  }
+
+Despite many interesting discoveries in the lab and clinic,
+cause and effect in many biological settings remains difficult
+to determine  stifling the design of therapeutic interventions.
+Alzheimer's Disease is one important unresolved medical issue
+which may exemplify this limitation. For decades, amyloid beta and tau
+had both been considered as causal in the sense that removing
+either one would reduce disease processes and produce
+significant clinical benefits or even a cure
+( see citations in any of the AD citations below ).  
+That state of affairs is well documented 
+in the works
+that hint at it unravelling\cite{PMID37833948}  such as a 2002 work 
+suggesting that  "tauists" and "baptists" could 'shake hands"
+and look for other causes \cite{PMID11801334}. Efforts
+continued and recently
+Aducanumab was approved despite trials having been stopped for futility
+\cite{PMC8491638}
+followed by Lecanemab \cite{PMC10119064}
+\cite{vanDyck_Swanson_Aisen_Lecanemab_Early_Alzheimer_2023}. 
+Other approaches   target  cholinesterase  
+ \cite{PMC4052996} 
+due to decreased acetylcholine and NMDA receptors 
+\cite{PMC6375899} to control  glutamate and Ca 
+with limited success.
+
+Recently, the infectious disease hypothesis has gained  
+attention \cite{10.1371/journal.ppat.1010929}.
+\cite{10.3389/fcimb.2023.1123228}
+\cite{Lathe_Schultek_Balin_Establishment_consensus_2023}.
+This is motivated by a variety of observations
+including  the realization that amyloid
+beta is protective and appears as a CNS specific immune response.
+A 2022 work concluded AD is an autoimmune disease modualted 
+by Trp metabolites  
+\cite{DiezCecilia_Kolaj_Santos_Alzheimer_disease_2022}.
+However, autoimmune disease always invites the "undetected
+pathogen" concern and hence an interest in infectious etiology.
+Immune activation and Trp depletion associated with AD were recognized
+as early as 2000 \cite{Widner2000}.
+Similarly, Parkinson's has been considered as autoimmune with 
+possible undetected infection \cite{PMID37741513}.
+Perhaps most interesting is the similarities between
+various known spirochete infections including Treponema pallidum  and AD
+\cite{PMC4399390} especially as  syphilis cases
+continue to escalate although in younger high-risk fringe
+groups
+\cite{Amerson_CastilloValladares_Leslie_Resurgence_Syphilis_2022}
+distinct from the typical AD patients.  
+
+
+Other work has continued on age related cognitive decline in general.
+Some of this involves microbes in various ways such as the
+GI microbiome and their metabolites.  A mouse model of
+questionable relationship to real human diseases for example
+was investigated for behavioral issues related to metabolic
+and gut microbia properties \cite{PMID37717663}.
+In general tryptophan metabolism is now being explored as
+a mediator from GI microbiome to brain function
+\cite{PMC7231603} with particular interest in 5HT
+\cite{PMID25078296}
+Some work appears to just emphasize the role of Trp
+metabolite and various details
+\cite{Savonije_Weaver_Role_Tryptophan_2023}
+without considering the likely context pointing to deficiency.
+
+Significant literature exist on gut bacteria or organisms
+not within the CNS and their impact on the brain by various
+means such as metabolite generation or nutrient modifications.
+Metabolites may also exist in ingested food independent of host
+microbiome. One interesting work from 2007 identified tryptamine
+as a cause of neurodegeneration through Trp-tRNA synthetase 
+and the effects may not be overcome with excess Trp
+\cite{PMID17114825}. Recent literature on microbially derived
+tryptamine and indeed tRNA related signalling and 
+particularly Trp-tRNA- related signalling has added details but not
+resolved issues completely. 
+
+A nutritional or dietary component has been considered and various
+interventions proposed.
+Not surprisingly given the observations of decreased
+acetylcholine, dietary choline is a popular choice
+\cite{PMC7041773}. 
+In the case of choline deficiency, given that gut organisms
+are thought modulate choline availability to the host
+\cite{MartinJBlaser_Intestinal_Microbiota_Composition_Modulates_2015}
+, nutrient and neurotransmitter deficiency could be mediated by
+infection with the wrong microbes and age dependence due
+to impairment of GI tract. In this case eradication of the
+offending metabolic routes may be therapeutic but ultimately
+the presumed vitamin deficiency still needs to be corrected
+to try to repair the GI tract if possible.  
+
+
+
+In any case, microbe exposure is not as  age specific
+as Alzheimer's Disease and an infectious etiology 
+ suggests a good intervention
+will be host directed attempting to restore the successful
+"youthful' response. 
+There are special events such as conception at which
+time exposure and response to microbes is unique and difficult
+to replicate later in life.
+By finding  associations between groups of organisms
+and clinical trajectory, work on the infectious hypothesis
+will greatly aid evolving hypoteses that consider the
+microbial environment such as barrier function and nutrient flows. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The present work builds on my earlier efforts 
+that suggest other neurotransmitters, notably
+those derived from the "WHY" ( tryptophan histidine tyrosine ) 
+amino acids, possibly along with
+vitamin K, are more important although a complete solution
+will address the age related bottlenecks. 
+
+Herein, I describe how common sources
+like lecithin may also promote absorption of other nutrients
+making success anecdotes ambiguous.  
+One work suggesting amino acid and tryptophan restriction
+to counter aging suggests that can impair cognition
+\cite{CANFIELD201970}.
+
+The present work seeks to support a nutritional hypothesis,
+without or without microbial involvement,  that
+cognitive decline and correlates of aging in general are due
+to effective starvation for various nutrients in compartment
+specific ways. Part of this was alluded to in a response to
+\mjmdisease \cite{mmarchywka-MJM-2020-002-0.10}
+\cite{mmarchywka-MJM-2020-002-0.12rg}. 
+Some interest has recently been expressed in age
+related GI damage suggesting interferon-gamma per se
+may be part of a problem 
+\cite{Omrani_Krepelova_Rasa_IFNupgamma_Stat1_axis_drives_2023}.
+
+Seemingly unrelated work can be linked to nutritional status.
+For example, a  causal role for lncRNA such as MEG3
+in mediating neuron death in AD has been described
+\cite{Balusu_Horre_Thrupp_MEG3_activates_necroptosis_2023}.
+You may recall this had previously been implicated
+in apoptosis and endothelial cell dysfunction 
+related to high glucoase \cite{PMC6958101}
+\cite{Tong_Peng_Gu_LncRNA_MEG3_alleviates_high_2019}
+as well as pathogen 
+\cite{Pawar_Hanisch_PalmaVera_Down_regulated_lncRNA_MEG3_2016}
+and tumor control \cite{YAN2023109340} through mTOR. 
+With little direct testing of nutritional interventions,
+it is interesting that 
+ dietary tryptophan was found to improve  a glucose issue 
+in fish via lncRNA \cite{JIA2021737256}.
+Its also worth noting that in the past  coding regions 
+had been given the most
+attention while the more idiosyncratic regulatory issues
+had been ignored. Control and feedback may be important responses
+to various stimuli including nutrition but much analysis 
+assumes monotonic static correlations based on protein functions. 
+Another line of attack is recent work with aquaporin 4 pointing 
+to read through\cite{PMC10566184}.
+There is some indication linking Trp ( and Tyr)  or its tRNA 
+to read through rates \cite{PMC8136774}.
+
+
+
+The work will  interpret the microbiome results
+from figure 4 in \cite{10.3389/fcimb.2023.1123228} 
+in terms of the literature on the most differentially abundant
+organisms ( those at either end of the curve)
+which have been listed in \mjmreftab{otuextremes}.
+This tends to confirm that their results have some validity
+as some organisms suggest the observed changes in iron and
+methanol distribution likely in diseased brain while
+others relate to differential abundance of nutrients
+thought to be neurotransmitter precursors such as
+tryptophan and tyrosine. Further consideration of methanol
+however adds concern for  two possible endogenous sources:
+GI bacteria and excess methyl donors. 
+Increasing stomach acidity may reduce GI methanol
+production and that is discussed as a low
+risk approach to explore although contrary to
+many notions that encourage PPI usage. 
+Creation from methyl donors
+motivates a larger interest in controlling nutrients like 
+methionine and supplements like SAM.  
+Further consideration  of these organisms in this  
+suggests that some of the differences may be due to loss of
+symbionts that could have been present since conception
+and this hypothesis appears to be novel for AD.
+If they were seeded during conception it may be difficult
+to re-establish in old age and the use antibiotics would
+need to be considered carefully. 
+% pursue this in passing as immigration rates are important as is location
+%Large community changes also may require reconsideration of BBB permeability in a healthy state.  
+
+
+\begin{comment}
+ir utility
+for measuring properties of the CNS  environment such as nutritional
+status with only incidental contributions to disease progression.
+The work suggests the evidence largely supports an infectious
+etiology but I try to show here that in fact the microbes
+may be making an exceelent relevant measurement of nutrient
+status in the brain. Some of the properties of the differentially
+abundant organisms however do suggest way in which they may
+assist or impair brain function by their presence.  
+The authors produced a minimally processed list of OTU's that
+differed in some ways between disease and control samples
+and they tabulated the most extreme differences in the text
+which is reproduced below, \mjmreftab{otuextremes}.
+
+%Other views of genetics have suggested that in essence amyloid
+%beta mediates effects through iron and perceived hypoxia
+%\cite{Lardelli_Alternative_View_2023} or in essence nutritional
+%issues. 
+\end{comment}
+
+\section{The Extreme Differentially Abundant OTU's  }
+
+\mjmreftab{otuextremes} lists
+the organisms implied to be
+associated with health or AD as  taken from figure 4 in
+ \cite{10.3389/fcimb.2023.1123228} . 
+they  are discussed in an order related to their  
+features. Some have been ignored due to lack 
+of interesting literature although some inferences may
+be able to be made later by appeal to the 16s sequence later.
+Host-organism relationships can be quite diverse 
+and many organisms tend to be benign or beneficial to humans
+but are also found to become pathogenic under conditions
+that may not be well defined. 
+
+
+\begin{table}[H] \centering
+\begin{tabular}{|l|r|c|l|}
+\hline
+\multicolumn{4}{|c|}{Title}\\
+\hline
+\multicolumn{4}{|c|}{ Six OTUs are more abundant in the control group:  } \\
+\hline
+Acinetobacter junii &&& common in soil animals human water soil, plant growth promoter, from birth? \\
+Comamonas jiangduensis&&& plant symbiont, genus uses Trp  \\
+Cloacibacterium normanense&&& breast milk aromatic degrading \\
+Pseudomonas putida,&&& denitrifyin,benzoate overgrowth  breast milk  \\
+Pseudomonas thermotolerans&&& may not use benzoate \\
+Diaphorobacter nitroreducens&&& sludge not benzoate, methanol,  or sugars tetracycline favored  \\
+\hline
+\multicolumn{4}{|c|}{ Seven OTUs are more abundant in the AD group:  } \\
+\hline
+Cutibacterium acnes &&& skin resident, overgrowth in 5HT depletion  \\
+Staphylococcus epidermidis &&& skin resident, known pathogen in infant brains \\
+Acidovorax ebreus &&& Fe oxidation \\
+Acinetobacter tjernbergiae &&& sludge uses histidine but not others  \\
+Acidovorax temperans&&& Fe oxidation \\
+(Novi)herbaspirillum soli &&& volcanic burned soil plant enhancer  \\
+Methylobacterium goesingense&&& methanol consumer \\
+\hline
+\end{tabular}
+\caption{ Miscellaneous features of 
+OTU's identified in \cite{10.3389/fcimb.2023.1123228} 
+that are more or less common in AD vs control post mortem brain
+sections after minimal processing. In order of "Extremism"
+with first entry being the most extreme in each category. 
+}
+\label{tab:otuextremes}
+\end{table}
+
+\newcommand{\mjmotu}[1]{ {\bf #1 :  } }
+\newcommand{\mjmotuc}[1]{ {\it #1 :  } }
+\newcommand{\diaphorobacter}{ % nitroreducens 
+\mjmotu{Diaphorobacter}
+\mjmotuc{Increased in healthy}
+Diaphorobacter nitroreducens was first isolated
+from activated sludge in 2002 and found to use polyhydroxybutyrate
+but no common sugars  and notably not used were, 
+" methanol, caprylate, citrate, benzoate, serine, and histidine"
+\cite{Khan_Hiraishi_Diaphorobacter_nitroreducens_2002}.
+
+Diaphorobacter along with Pseudomonas increased in abudance
+with addition of tetracycline into a nitrogen reducing 
+reactor with mixed bacteria culture \cite{XU2022113652}. 
+
+} %Diaphorobacter nitroreducens 
+
+
+
+
+
+%Staphylococcus epidermidis 
+\newcommand{\staphylococcus}{
+\mjmotu{Staphylococcus}
+\mjmotuc{Increased in AD}
+Until recently Staphylococcus epidermidis was not
+considered pathogenic as a normal inhabitant of the skin but
+is now recognized as a common pathogen \cite{PMC2807625}.
+If there is a specific pathogen responsible for age associated
+cognition defects this is the most suspicious of the group.
+It is the most common infection in pre-term infants and
+activates microglia and modulates BBB permeability
+\cite{Gravina_Ardalan_Chumak_Transcriptome_network_analysis_links_2023}.
+Like some of the other bacteria here, it has been isolated from  planted
+areas and in particular apple 
+orchards and found to promote the growth of clover \cite{Cheng2021}.
+One report suggested it is a symbiont in the female mouse reproductive
+tract \cite{ONO201511}.
+It was found in higher amounts in infant fecal micrbiome when 
+vitamin K deficient \cite{Benno_Sawada_Mitsuoka_Intestinal_Microflora_1985}
+which may be expected as "leakage" or diffusion from the skin and reduced
+coagulation barrier function. 
+
+As a  coagulage-negative Staphylococcus, it can secrete
+antibacterials such as 6-thioguanine a purine analog
+inhibiting purine synthesis in susceptible organisms
+\cite{Chin_Goncheva_Flannagan_Coagulase_negative_staphylococci_release_2021}.
+It would be interesting to check community for overall entropy
+and susceptibility to see if this is a relevant factor. 
+In particular, determine  if A junii is susceptible. 
+
+Trp metabolite have some activity against it 
+\cite{Narui_Noguchi_Saito_Anti_infectious_Activity_2009}
+suggesting its presence may indicate low Trp metabolism due
+to lack of tryptophan or reduced activity of any surviving 
+brain cells. 
+
+
+}%Staphylococcus epidermidis 
+
+
+%Noviherbaspirillum soli &&& \\
+\newcommand{\noviherbaspirillum}{
+\mjmotu{(Novi)herbaspirillum}
+\mjmotuc{Increased in AD}
+Originally isolated from plants in volcanic ash, 
+and assigned to Herbaspirillum,
+Noviherbaspirillum soli  is thought to be siderophore producing
+and plant growth promoting and  will assimilate 
+lactate and hydroxybenzoate
+\cite{Carro_Rivas_LeonBarrios_Herbaspirillum_canariense_2012}
+possibly making it parasitic if it predominantly
+uses lactate in the sick brain.
+The distinction between "parasite competing for scarce lactate"
+and " symbiont benefiting from excess benzoate" is 
+discussed later as there is a lot of ambiguity in all cases  without
+networked rate equations.
+It is also possible that more lactate is available due to
+astrocyte production in excess of demand by dysregulated neurons.
+H soli changed genus circa 2014 from Herbispirillum 
+after proposal in 2013
+\cite{Lin_Hameed_Arun_Description_Noviherbaspirillum_malthae_2013}.
+%Found with family in diesel wastes etc. 
+A relative, 
+N. denitrification HC18,  can methylate methyl-$As^{3}$ but
+not $As^{3}$ \cite{PMC8881391}.
+Another relative,  Herbaspirillum sp. WT00C,
+ is an endophytic  selenite reducer specific to tea-plants \cite{PMC7075828}.
+Noviherbispirillum  was one of a few genera to increase in abundance
+in a soil sample with the addition of pyrogenic organic matter
+\cite{Zeba_Berry_Fischer_Soil_carbon_mineralization_2023}
+
+Species of Herbaspirillum  considered plant growth promoting bacteria ( PGPB )
+were described as having low siderophore production
+but P solubilizing ability as endophytes \cite{PMC4763327}.
+
+} %Noviherbaspirillum soli &&& \\
+% Methylobacterium goesingense
+\newcommand{\methylbacterium}{
+\mjmotu{Methylbacterium}
+\mjmotuc{Increased in AD}
+Methylobacterium are notable for metabolism of methanol
+and succinate in beneficial association with plants 
+\cite{ChenyuDu_Consumption_Methanol_2012} .
+Indeed, increased formaldehyde is observed in neurological patients
+and the elderly
+\cite{Dorokhov_Shindyapina_Sheshukova_Metabolic_Methanol_Molecular_Pathways_2015}
+suggesting the presence of Methylbacterium is indicative
+of methanol accumulation  and perhaps mitigation of  formaldehyde 
+damage by oxidizing methanol.
+It is converted to formaldehyde by a periplasmic dehydrogenase
+and in the cytoplasm converted to CO2 or assimilated
+\cite{PMC1287603}.
+Associations with plants may be 
+endophytic or epiphytic
+and appears to be largely due to methanol released during pectin
+metabolism
+\cite{PMC1287603}.
+
+} % Methylobacterium goesingense
+
+
+
+\newcommand{\acidovorax}{
+\mjmotu{Acidovorax}
+\mjmotuc{Increased in AD, 2 species}
+
+
+Acidovorax was found in root endosphere of Chinese Chives
+\cite{PMC8883035}.
+
+
+As with some other genera, Acidovorax interactions with plants
+are well documented
+\cite{SBurdmanfirstRRWalcott_Plant_Pathogenic_Acidovorax_2018}
+. Beneficial and pathological relationships
+have been distinguished by genomes with beneficial
+abilities to sense, transport, and synthesize useful
+molecules while pathogens have secretion systems
+and ability to use plant synthesized lipids \cite{PMC8767351}
+.
+ Besides acetate, Acidovorax can use lactate and
+citrate as carbon sources  \cite{PMC3233087}.
+It is notable for oxidation of Fe-II and encrusting
+mineralization
+\cite{Chakraborty_Roden_Schieber_Enhanced_Growth_Acidovorax_2011}
+. Although the benefits of iron oxidation have been demonstrated,
+ encrustation depends on iron concentration and perhaps absence of 
+chelators\cite{PMC3233087}.
+This may generate a distinctive "green rust" 
+\cite{10.3389/fmicb.2019.01494}
+\cite{Pantke_Obst_Benzerara_Green_Rust_Formation_during_2012}.
+Arguably precipitation is a better fate for excess iron than
+some alternatives so even this may be mitigating although
+not sustainable as minerals accumulate.
+} % acidovorax
+
+\newcommand{\acinetobacter}{
+\mjmotu{Acinetobacter}
+\mjmotuc{Species fluctuate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The Acinetobacter distribution appears to be the most confusing
+with junii over abundance in the control group and 
+Acinetobacter tjernbergiae in the AD brains.
+Interestingly some species can live off of tryptophan metabolite kyneurinine and
+both of these species lack a putative Mn transporter  
+\cite{10.1371/journal.pgen.1010020}
+( that work \cite{10.1371/journal.pgen.1010020} also has some
+details of genetics among the pathogens ). 
+Acinetobacter junii was the organism most overabundant in
+the control group. At least in combination with other organisms
+appears to promote plant growth \cite{Padmavathi2015}.
+Described as "hypertolerant" to metals such as
+arsenic \cite{10.1111/jam.14179} and lead \cite{Kushwaha2017}
+\cite{PMC6863301} %low levels of similar metals may favor it over others. 
+The Acinetobacter in general are described as versatile plant growth
+promoters with beneficial effects on availability or buffering of
+nutrients like phosphate and metals \cite{MUJUMDAR2023327}.
+A junii is rarely a human pathogen but infections have been
+documented and more likely in thos with prior antibiotic use, invasive
+procedures, or cancer \cite{Clinical_characteristics_patients_Hung_2009}
+in preterm infants
+\cite{PMC120562}.
+Intriguingly, it is much more common in the fecal microbiome of
+those delivered by vaginal
+birth than cesarean \cite{Pandey2012}
+and exposure of cesarean infants to maternal vaginal fluid
+improved some aspects of neurodevelopment 
+\cite{Zhou_Qiu_Wang_Effects_vaginal_microbiota_2023}.
+
+Pathogenic species of Acinetobacter appear to rely on histidine
+\cite{MarvinWhiteley_Histidine_Utilization_2020}
+A junii was originally identified in 1985 however by its ability 
+to use L-histidine
+\cite{Kollimuttathuillam_Bethel_Shaaban_Case_Acinetobacter_2021}
+\cite{Bouvet_Grimont_Taxonomy_Genus_1986}.
+It is possible that its presence reflect adequate CNS histidine
+but refer to \mjmrefapp{interp} for a more complete description.
+
+Some works compare the species in good details such as 
+\cite{VanAssche_Assche_}
+\cite{Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015}Z
+although no obvious differences between A junii and
+tjernbergiae were apparent.
+} %\acinetobacter
+
+%Acinetobacter tjernbergiae &&& sludge uses histidine but not others  \\
+\newcommand{\tjernbergiae} { % &&& sludge uses histidine but not others  \\
+
+Substrate selections for A. tjernbergiae were listed as, 
+\cite{Carr_Kampfer_Patel_Seven_novel_species_2003}
+\begin{quote}
+Using the method of Ka¨mpfer
+et al. (1993), L-arginine, L-histidine and quinate are all used
+as sole sources of carbon and energy and some strains utilize
+DL-aspartate and L-leucinamide. cis-Aconitate, pimelate,
+trans-aconitate, adipate, 4-aminobutyrate, azelate, citrate,
+glutarate, malonate, oxoisocaprate, suberate, b-alanine,
+L-aspartate, L-glutamate, L-leucine, L-phenylalanine,
+L-tryptophan, 4-hydroxybenzoate and phenylacetate are not
+utilized.
+\end{quote}
+
+} %Acinetobacter tjernbergiae 
+
+\newcommand{\putida}{
+P. putida is known for flexibility 
+\cite{Molina_Rosa_Nogales_Pseudomonas_putida_2019}
+\cite{PMC9004399}
+suggesting its presence is not particularly informative
+without phenotype or mRNA information. 
+It can be denitrifying \cite{PMID19111647}.
+However, its potential utility in bioproduction has
+created a significant amount of literature on it
+including glutarate sensing and metabolism
+\cite{NinaRSalama_Regulation_Glutarate_Catabolism_2019}.
+While glutarate is a toxic product or amino acid metabolism,
+it would not be clear if P putida would be more fit in
+a high or low concentration setting but may be able to
+remove it. 
+A rough form has been found in biofilms along with
+Acinetobacter species \cite{PMC1913468}.
+However, Pseudomonads and other soil dwelling organisms 
+are known for degrading benzoate derived from lignin
+\cite{PMC5779716} and could also be derived from tyrosine
+or similar neurotransmitters.
+} % putida
+
+
+ %/seedling 
+%Pseudomonas thermotolerans&&& \\
+
+\newcommand{\thermotolerans}{
+Pseudomonas thermotolerans is notable for possibly
+not using benzoate \cite{Manaia_Pseudomonas_thermotolerans_2002}.
+Although the real issue is aromatic amino acid usage and early
+work did suggest a strain specifivity at least with P aeruginosa,
+"28 of 29 strains
+grew on tyrosine as a sole source of carbon,
+whereas only seven grew on phenylalanine as a
+sole source of carbon"
+\cite{Calhoun_Pierson_Jensen_Channel_Shuttle_Mechanism_1973}.
+
+} %Pseudomonas thermotolerans&&& \\
+
+
+\newcommand{\cutibacterium}{
+\mjmotu{Cutibacterium}
+\mjmotuc{Increased in AD}
+Prior to 2016, Cutibacterium acnes was in the genus Propionibacterium
+with a 2019 proposal for supbspecies defendes added to acnes and elongatum
+which is associated with  progressive macular
+hypomelanosis  rather than acne
+\cite{Dekio_McDowell_Sakamoto_Proposal_combination_2019}. 
+If it is elongatum, relationship to a pigmentation disorcer
+suggests interaction with tyrosine or tyrosinase.
+Treatments of hypomelanosis may include 
+benzoyl containing products
+\cite{PMC7772758} although transformations remain unknown,
+C. acnes is thought to be able to synthesize biotin
+as this has been recognized as a skin or hair issue
+\cite{GoularteSilva_Paulino_Ketoconazole_beyond_antifungal_activity_2022}
+and sometimes comes up in brain health. Presumably
+them low biotin would favor it and signal an unhealthy
+environment.  
+
+
+The species is itself quite diverse.
+Interestingly, it is credited as a pathogen in  many
+infections with a strain-specific antibiotic,
+thiopeptide cutimycin, which is supposed to kill S. epidermidis
+although the interaction appears to be two-way
+\cite{10.3389/fmicb.2021.673845}. An antibiotic  would be surprising given
+that S. epidermidis abundance has increased too. 
+This could be a candidate for an AD pathogen but given its 
+ubiquity it would need other changes in the host.
+I very recent work on fungal infection found Cutibacterium 
+expansion in Tph-/- mice which were unable to convert tryptophan
+into 5HT \cite{Renga_DOnofrio_Pariano_Bridging_host_microbiota_2023}.
+Even though this intervention may have raised tryptophan levels,
+it acted similarly to tryptophan depletion in that the tryptophan
+metabolite 5HT was missing allowing for proliferation. 
+"Serotonin degeneration " bas been implicated in cognitive
+declines \cite{PMID37718818} and it may not be clear
+in which direction cause and effect operate but 
+degeneration in response to limited tryptophan
+would be quite plausible. 
+} % cutibacterium}
+
+
+\newcommand{\comamonas}{
+\mjmotu{Comamonas}
+\mjmotuc{Increased in healthy}
+The Comamonas genus was also observed to be less abundant
+in intestinal microbiome of AD patients
+\cite{JianpingJia_Intestinal_Microflora_Changes_2022}
+suggesting the brain and intestinal abundances may correlate
+although not mentioned in a similar 2017 analysis
+\cite{Vogt_Kerby_DillMcFarland_microbiome_alterations_2017}
+or a recent review article
+\cite{Li_Zhu_Zhang_intestinal_microbiome_2018}.
+\mjmtol{check for name changes lol}
+
+Comamonas jiangduensis known for producing biosurfactant in
+agricultural soil \cite{Sun_Zhang_Chen_Comamonas_jiangduensis_2013}
+They are infrequent human pathogens and some members were originally
+classified as Pseudomonas \cite{PMC9504711}.
+Comamonas acidovorans, as part of plant rhizobacteria, with tryptophan was observed to promote
+lettuce seedling root elongation \cite{Barazani2000} although
+10mM tryptophan inhibited its growth. 
+
+Comamonas genus is also considered metal tolerant 
+\cite{Caracciolo_Terenzi_Rhizosphere_Microbial_Communities_2021}.
+Potentially then low levels of heavy metals could favor
+these organisms leading to increases in absolute abundance. 
+Depending on the numbers then, it is
+possible that some cognitive benefits could result from small
+amounts of these toxic elements. While perhaps not
+likely, its important to remember issues like this especially
+when the obvious interpretations don't lead to useful
+interventions or "go over like a lead balloon." 
+
+
+
+} % comamonas
+
+\newcommand{\cloacibacterium}{
+\mjmotu{Cloacibacterium}
+\mjmotuc{Increased in healthy}
+Cloacibacterium was found abundant in stem endosphere while
+ Chinese Chives
+\cite{PMC8883035}.
+Isolated from municipal wastewater by 2006
+\cite{PMID16738108},
+Cloacibacterium normanense is electrochemically active
+\cite{Aparna_Meignanalakshmi_Comparison_power_generation_}
+\cite{Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_}
+Along with P. putida, it is a component of breast milk
+(  Guatemalan mothers ) 
+ and both
+have aromatic hydrocarbon degrading capabilities
+\cite{PMC7907006}.
+Its route to the milk is controversial however
+\cite{10.3389/fmicb.2022.885588}.
+
+
+Cloacibacterium normanense is 
+listed as an endophyte of plants grown in textile waste
+water \cite{Shehzadi_Fatima_Imran_Ecology_bacterial_endophytes_2016}.
+
+\mjmtol{check direction and numbers with author, also not right next to Geobacillis not Geobacter lol. }
+It was one of the most increased  genera in recurrence free
+patients' BAL fluid prior to resection of early stage
+non-small cell lung cancer 
+\cite{Patnaik_Cortes_Kannisto_Lower_airway_bacterial_microbiome_2021}
+.
+
+
+Cloacibacterium  was detected in an exploration of 
+breast microbiome and metabolites in triple negative
+breast cancer \cite{Wang_Rong_Zhao_microbial_metabolite_trimethylamine_2022}
+but I Was unable to determine from the supplementary
+information which samples were "IM." 
+\mjmtol{ from their file mmc4, it looks like several p-values are lower than TMAO including lactate, Trp, and Trp derivatives }
+The role of TMAO has been an matter of debate and has featured
+some of the same issues related to causal role now being
+explored for brain microbes and metaboliates \cite{PMC5127123}. 
+The genus was also found differentially abundant in certain
+types of artertitis along with metabolic changes 
+\cite{PMC9224234}. \mjmtol{ The reference also mentions FISH which may be
+useful in localization.}
+
+} % \cloacibacterium
+
+
+
+\cutibacterium
+
+\staphylococcus
+
+\acidovorax
+
+\noviherbaspirillum
+
+\methylbacterium
+
+\comamonas
+
+\cloacibacterium
+
+\mjmotu{Pseudomonas }
+\mjmotuc{Increased in healthy}
+\putida
+
+\thermotolerans
+
+\diaphorobacter
+
+
+\acinetobacter
+\tjernbergiae
+
+
+
+
+% spell
+
+\section{ Microbes, Nutrients, and Disease }
+
+
+
+Organisms or communities may be considered pathogenic,
+beneficial, or neutral, causal or responders 
+with these attributes defined by the result of
+the subject's removal from the host. 
+Novel data such as these abundances also needs to
+be "sanity checked" or validated. 
+There are recurring issues with this kind of data
+even in this short work and some common caveats
+are described in \mjmrefapp{interp}.
+
+The original work \cite{10.3389/fcimb.2023.1123228}
+ analyzes the data to suggest that  
+ a pathogenic organism or community is causing the disease
+and it removal or attack can have clinical benefit. 
+However, looking at the most differentially abundant
+OTU's, along with other known or suspected characteristics
+of the disease state,
+ it is easy to make a case for pre-existing beneficial organisms
+being replaced by disease related emergent organisms 
+largely reacting to and mitigating a changed environment. 
+The distinction is important because in the former case
+broad spectrum antibiotics with good CNS penetration may be
+explored but in the latter case restoration of nutrient
+flow and targeted eradication or seeding may be more prudent.
+The easy reconciliation between observed abundance variation
+and disease properties also helps validate the microbiome
+results. 
+ 
+Taken together, these  differential abundances
+can suggest that
+the diseased brain is reduced in the supply
+of tryptophan or metabolites, benzoate or parents
+like tyrosine, while having an excess of
+iron and methanol. 
+Reduced levels of vitamin K and biotin may also be factors. 
+
+
+Most or  all of these genera, notably Methylbacterium, Pseudomonas,
+Acinetobacter and Herbaspirillum, have shown some activity as 
+plant growth promoting bacteria (PGPB) \cite{GomezGodinez_AguirreNoyola_MartinezRomero_Look_Plant_2023}.
+Comamonas jiangduensis, more common in health, 
+is known for producing biosurfactant in
+agricultural soil \cite{Sun_Zhang_Chen_Comamonas_jiangduensis_2013}
+while Noviherbaspirillum soli, more common in AD, is found in 
+volcanic soils and may be  an early colonizer presumably
+  suited to lower fertility conditions  suggesting in general
+the disease brain may be nutrient poor.
+
+
+\subsection{Tryptophan related}
+
+Excess tryptophan may suppress the skin bacteria,
+the C acnes and S epidermidis.
+Reduced tryptophan may be due to decreased intake
+with age, decreased uptake due to GI or vascular
+impairment, or decreased signalling to bring peripheral
+Trp to the brain. Metabolite decreases may be purely
+due to Trp decrease or decreased functions or
+host cells and bacteria that would produce metabolites
+such as 5HT. 
+Similar considerations apply to all nutrients including benzoate and tyrosine
+with all caveats in \mjmrefapp{interp} applying.
+
+Some reference works exist on various aspects of
+metabolism and taxonomy. One work on tryptophan
+synthesis and IAA production shows for example
+the abilities of A. junii and P. putida,
+which have IPA pathways,  in the 
+context of others
+\cite{SuarezPerez_Bacterial_gene_diversity_related_2020}.
+while IAA appears be  deleterious at mg/kg for animal 
+fetus
+\cite{Furukawa_Abe_Usuda_Indole_Acetic_Acid_2004}
+\cite{FURUKAWA200743}
+and correlates with cognitive decline in CKD patients
+\cite{LIN201985},  to the brain,
+IPA has been investigated as a therapeutic in phase II
+clinical trials \cite{Politi1999} and it other brain
+related effects \cite{Moroni1991}\cite{Bartolini2003}.
+Note that the above "IPA" is indole pyruvic acid  NOT indole propinoic
+acid although IPA is used for the latter in at least one work on intestinal
+production of Trp derivatives suggesting both may be beneficial and
+that IAA production is known to occur
+\cite{PMC8972051}. As early as 1999, indole-3-propionic acid
+was investigtaed for effects against AD \cite{Chyan_Poeggeler_Omar_Potent_Neuroprotective_Properties_against_1999}.
+It is quite possible that for a beneficial relationship
+the organism has to adapt its metabolism to the human host
+versus a typical plant.
+
+As early as 2000, it was demonstrated that acute tryptophan
+depletion could worsen cognition among AD patients
+\cite{Porter_Cognitive_Deficit_Induced_2000} but that does not
+prove that the dominent cause of the natural disease could
+be corrected by providing more Trp. A 2003 stody of healthy 
+and AD patients demonstrated cognitive impairment by
+"depleting" trp in a comparison of two amino acid drinks with and
+without tryptophan \cite{PORTER_LUNN_OBRIEN_Effects_acute_tryptophan_2003}
+suggesting amino acid competition may be significant in the elderly.  
+
+A interesting 2010 study in Drosophila demonstrated complete recovery
+from expression of amyloid beta with oral  
+1,4-naphthoquinon-2-yl-L-tryptophan which was designed based
+on observations of quinones preventing aggregation 
+\cite{JulietAnnGerrard_Complete_Phenotypic_Recovery_2010}.
+Presumably, vitamin K then could exert similar effects
+and the compound itself could be broken down to provide
+excess tryptophan of unknown significance. It is not know if
+follow up work occured. 
+Vitamin K deficiency was also recognized as early as 2001 
+as a contribut0or AD and cardiovascular disease 
+\cite{ALLISON2001151} with modern work continuing to
+assess the situation \cite{10.3389/fneur.2019.00239}.
+ 
+
+
+\subsection{Tyrosine related}
+
+
+Repeated application of benzalkonium chlorides to the Lascaux Cave
+created an overgrowth dominated by Ralstonia and Pseudomonas
+\cite{Bastian2009}.
+This suggests a competitive advantage in aromatic rich settings 
+Benzoate consumption has a putative benefit in dementia
+\cite{Lin_Chen_Wang_Effect_Sodium_Benzoate_2021}
+and it could act to feed symbiotics or aid absorption
+of nutrients including tryptophan. 
+
+
+Studies relatiing P putida and aeruginosa response
+to aromtic amino acids as in cystic fibrosid sputum 
+have shown some common and species specific features. 
+\cite{PMC2876504}.
+Swimming and surfactant production as a function of
+amino acid exposuire have been investigated at least
+for P. aeruginosa \cite{PMC94731}.
+
+\mjmtol{ D-typroinse but only in combination with an antibiotic
+incredible synerty in kill rates 
+\cite{Jia_Yang_Xu_Mitigation_nitrate_2017}. D-amino acids 
+such as D-serine and D-amino acid oxidase are well known in the brain.  }
+
+
+\subsection{Histidine  related}
+The only obvious relationship to histidine sugests it is probably
+adequate or more or less conssitent based on Aceinetobacter. 
+See howver \mjmrefapp{interp} for general ambiguities.
+
+
+\subsection{Methanol   related}
+
+The alert to methanol was a surprise but supported
+by signbificant literature. 
+As early as 2014, exploration of chronic methanol feeding
+relationship to AD pathology was explored \cite{PMID24787915}
+with feeding to monkeys producing tau phosphorylation and amyloid
+plaques \cite{PMID24787917} similar to AD .
+
+Interestinly investigation on APOE-4 and ethanol consumption 
+\cite{LI20181} may be consistent with an important role
+for methanol in AD pathology. 
+
+ 
+Supplement usage related to SAM may need to be more carefully
+considered
+\cite{Fukumoto_Ito_Saer_Excess_adenosylmethionine_inhibits_2022}.
+\mjmtol{ this is a duplucat citation used later } 
+Some evidence suggests excess methionine may impair memory for example
+\cite{TapiaRojas_Lindsay_MontecinosOliva_methionine_2015}.
+A link to Parkinson's-like symptoms has already been considered as early as 2010
+\cite{PMC2885904} and investigation into supplement usage may
+be useful. 
+
+Increased methanol production or concentration anyway is known in old age
+\cite{PMID25834233}
+ and may point
+to better nutrient optimization.
+
+
+\subsection{Iron and Vitamin K   related}
+
+The abundance of iron and methanol responsive organisms is also
+consistent with prior expectations helping to validate
+their initial results.  
+iron metabolizing organisms would presumably benefit from
+heme influx due to vascular issues like CAA or microbleeding
+which is common in AD \cite{PMC5144472}. 
+
+
+Reduced vitamin K may be suspected
+due to the iron influx which may be due to angiopathy
+and defective coagulation.  Biotin may also
+be a factor. 
+
+Vitamin K in aprticular may not be fully appreaciated but
+it apparently important for CNS sulbatide regulation
+\cite{PMID8914944}
+\cite{PMC6110503}
+and the sulfatides thsmelves have important but confusing effects
+on coagulation \cite{Kyogashima2001}.
+There is a tendency to jump to anticoauglants with the
+appearance of inappropriate coagulation but it is necessary
+to isolate damage and more vitamin K may be indicated
+i\cite{marchywka-MJM-2022-015-0.20c}.
+
+
+Acidovorax iron oxidation  is intriquing as I suspected mineral deposits were part
+of "old age patholgoy" but the question remains if the growth
+benefit is due to extra iron supply from heme suggesitng
+it is just a symptom of a large leakage problem. Initially, 
+I would have suspected calcium minerals and a role for vitamin K.
+ 
+\subsection{Exposure, Vulnerability, and Uptake into CNS }
+
+
+While C. acnes and S. epidermidis could both
+be considered possible pathogens, their lifelong
+residence on the skin appears difficult to
+reconcile with the age distribution of AD.
+However, as would be expected with loer quality
+barriers due to protein quality correlating
+with old age, their ability to colonize
+the brain would be approaching that
+which existed at birth ( with vitamin K deficiency lol)
+ or indeed conception.
+
+
+
+A junii original topic here, 
+Vaginal microbiome required more study although some
+indications are existence of organisms over represented
+in healthy brain. 
+
+Intriguingly, it is much more common in the fecal microbiome of
+those delivered by vaginal
+birth than cesarean \cite{Pandey2012}
+and exposure of cesarean infants to maternal vaginal fluid
+improved some aspects of neurodevelopment 
+\cite{Zhou_Qiu_Wang_Effects_vaginal_microbiota_2023}.
+
+
+
+Possibly the semen carries some of the speculated symbiants
+\cite{Koort_Sosa_Turk_Lactobacillus_crispatus_2023}
+\cite{10.3389/fcimb.2022.815786}
+making "infection-at-conception" possible. 
+At least one study did find an increased risk of dementia with
+antibiotic usage
+\cite{10.3389/fphar.2022.888333}
+and a very recent review provides more context for the issue
+\cite{KarenMOttemann_2023}.
+
+It is possible that it is actually a symviotic organism lost
+over the lifetime although that too may be triggered by nutritional
+status. 
+
+\section{Discussion  }
+
+\subsection{ Plant Symbionts: Illusion or Nurse Cells?  }
+
+
+The appearance of plant symbiants in the CNS is
+intriguing if accurate although it could simply
+be the result of "literature skew" and coincidence.
+First, it would be helpful
+to determine where they are and how they have been
+missed for so long. Possibly many exist as spores or 
+other condensed or quiescent forms. Consideration of the
+isolation methods may be worthwile. If true, it may 
+be purely coincidental but the known structure of the bain
+involves compartmentalized metabolism with astrocytes
+already acting as "nurse cells" to provide lactate
+to neurons for peak energy demands
+\cite{PMID12742077}. The existence of prokaryoric nurse
+cells would not be unreasonable if they are common in 
+the conception environment. Implications for brain
+evolution could be significant.  
+My earlier work concerntrated on GI impairments since
+they are often ignored features of aging. Vascular
+issues present another barrier to nutrient exchange with
+active organs especially the brain. A third barrier could
+be overcome with substances excreted by microbes as
+most of the nutrients considered are hydrophobic.  
+
+The status of "immune privilege" \cite{Proulx_Engelhardt_Central_nervous_system_zoning_2022}
+ then may be as much
+to nurture bacteria as neurons. 
+
+
+\subsection{Informing Interventions   }
+
+
+I outlined a lot of unpublished work in my initial
+response to \mjmdisease including the
+specific problems with low stomach acid
+in the background of issues with tryptophan, tyrosine, and
+vitamin K 
+\cite{mmarchywka-MJM-2020-002-0.10}.
+
+In fact a 2023 work suggested that frailty more
+than age per se correlated with \mjmdisease severity
+as well as cognitive issues
+\cite{Matsumoto_Shibata_Kishi_Long_COVID_hypertension_2023}.
+A link between sarcopenia and cognition is suspected
+in general at least in some populations
+\cite{PMC9965467}.
+
+As low blood levels of Trp may not be observed,
+it turned out that there is some indication of
+stress transport
+\cite{ mmarchywka-MJM-2021-007-.1-table-rg}
+thought to be similar to the case with biotin
+where the liver imports less during starvation while
+brain metabolism is largely preserved
+\cite{PachecoAlvarez_SolorzanoVargas_Gravel_Paradoxical_Regulation_Biotin_2004}.
+
+A  2022  literature review tends to support that amino acid
+fluxes in sarcopenia reflect low truptophan levels
+\cite{10.3389/fendo.2021.725518},
+\begin{quote}
+However, a study showed that the levels of isoleucine, leucine, tryptophan, serotonin, and methionine in the participants with low muscle quality were significantly higher than that in the participants with high muscle quality, which may be attributed to impaired metabolism of amino acids, resulting in reduced uptake of skeletal muscle, and thus increased circulating plasma amino acid levels (15). Inconsistencies in amino acid profiles in patients with sarcopenia will lead to variations in clinical practice and research.
+\end{quote}
+
+In fact, it is known that Trp consumed with BCAA's may not be well transpoted
+to the CNS presumably raising blood levels but not brain levels. 
+
+In fruit mashes, fermentation pH can be a large factor in methanol
+production as well as pectin content 
+\cite{Blumenthal_Steger_Einfalt_Methanol_Mitigation_during_Manufacturing_2021}.
+Reduction of acidity from 2.5 to pH 3.5 may almost double
+methanol content. 
+Interestingly, endogenous production of ethanol from consumed
+sugars maybe reduced with citric acid consumption 
+\cite{10.3389/fmicb.2016.00047} while no direct experiments
+with methanol production have been found in the literature yet.
+PPI usage has a controversial relationship to dementia
+in general. 
+One recent study found a significant increase after years or usage
+\cite{Northuis10.1212/WNL.0000000000207747}
+and another 2022 study found associations
+including a  bias towards APOE4 carriers
+\cite{Zhang_Li_Chen_Regular_proton_pump_inhibitor_2022}.
+Although some meta-analyzes and reviews hace concluded the association is
+not there 
+\cite{PMC10229084}
+r only a problem in those using two rather than one type of PPI
+\cite{TorresBondia_Dakterzada_Galvan_Proton_pump_inhibitors_2020}.
+In cases of discordant results, it helps to look at details and meta-analyses
+may include issues like too low a dose, too little lag time or 
+confounding factors. Results may vary with population too.
+In general, stomach acid is expected to decrease with age
+and the use off PPI's iq being questions \cite{Mehta_Guasch_Kamen_Proton_Pump_Inhibitors_2020} they may not have much impact. 
+Low stomach acid is just one of many possible conditions
+that imprair nutrient uptake in aging populations.
+However, it appears to be easy to correct with more
+dietary acids such as citric or acetic with meals.
+Chloride sources may include potassium chloride with meals.
+
+
+ 
+
+
+%\begin{comment}
+Many suspects
+exist as nutritional contributors from amino acids to vitamin K. 
+Immediate benefits of simple nutrient additions may
+not be apparent until GI and vasculara damage is repaired
+or uptake aids are added. 
+
+Reasons are considered why simplistic
+interventions have failed and indeed controlled tests
+of "vitamins" may not reflect real-world anecdotes.
+In any case, an interpretation based on reaction rather
+than cause can explain most of the known evidence 
+. If there is a specific organism group driving clinical
+dementia it still needs to be better defined 
+as there may be risks to symbiotics with broad antibiotic treatments. 
+Further work can be considered to obtain phenotype information
+such as microbial mRNA analysis and microbiomes of
+younger brains with known fetal and peri-natal exposure histories.  
+"Infection-at-conception" would be an intriguing concept to explore
+even if organisms do not persist into old age. 
+%to examine mRNA in brain microbiome including younger deceased. 
+
+These results are consistent with 
+my earlier work on \mjmdisease suggesting that nutient loss 
+due to age related GI  damage is a correctable disease driver 
+even if not reflected in blood levels
+due to vascular damage and stress transport. 
+It is also possible however that prior neuron damage
+unrelated to nutrient supply 
+caused a decrease in Trp and Tyr mobilization or 5HT
+synthesis.
+%\end{comment}
+%While not considered from a nutritional standpoint before,
+
+\mjmtol{ there is a recurring problem with equating a blood level with
+a production rate when the sources and sinks or rate equations are not known. }
+Interestingly this may be produced by GI bacteria 
+\cite{10.1371/journal.pone.0090239} making them the pathogens effectively
+responsible for dementia. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Microbes then could be contributory through many mechanisms.
+Besides direct infection of the brain and production of toxic
+metabaolites, modulation of nutrient availability could
+be achieved by direct metabolism and damage to the GI tract.
+The former is documented for choline and \mjmvirus is likely
+to cause GI damage possibly related to ACE2 and therefore
+tryptophan transport. 
+As this likely accumulates with age and reaches a positive
+feedback stage where lack of nutirients leads to further
+GI decay, it could explain age distributions. 
+On the other hand, microbes in the brain make a functional
+measure of the brain environment at least for 
+bacteria. The ecology may be reflected in OTU abundances
+and phenotype information from mRNA of the more flexible
+organisms may further help interpretation.
+Rate equations accounting for sources and sinks of nutrients
+are probably needed in many cases. 
+
+
+
+
+
+
+The other insidattors
+are not clean measurements of but do point to the
+importance of tryptophan and tyrosine avialability
+or metabolism. The ability to metabolize iron in the
+diseased state is consistent with known vascular issues
+and helps validate the results and reaffirm vascular
+weakness and maybe a role for vitamin K and better
+clotting. 
+Prior work by other groups specialized towards
+Alzheimer's has been published with encouraging
+results although well controlled clinical trials
+have not been performed to the best of my knowledge.
+
+
+
+
+
+My prior work has concentrated on dogs but
+required much of the human literature arrving at
+ outlines such as  \mjmrefapp{baseline}.
+Previously published dog diets are similar
+\cite{marchywka-MJM-2022-013-0.10}
+\cite{mmarchywka-MJM-2021-003-v0.50rg}
+but more specific ones may be out soon.
+Recent experience has suggested a role for things such as
+benzoate which may improve solubility and uptake
+from GI tract of have other benefits\cite{marchywka-MJM-2022-013-0.10}
+ and should be
+a subject of a future work based on experience with dogs. Nutrient context
+will likely matter as much as amount. A concentrated
+concern for lipic solubles
+may be warranted. 
+Additionally, salmon broth and vinegar both appear
+to help dissolve components such as hardboiled egg yolk.
+For humans, ethanol may also be beneficial explaining
+inconsistent health benefits associated with alcohol
+consumption as they may only occur when consumed with
+appropriate food containing otherwise inaccessible nutrients.
+The work with dogs continues to focus on combinations
+similar to deep eutectic solvents i\cite{marchywka-MJM-2021-018-0.50rg}.
+The association of AD with APOE4
+may in fact be related to transport of lipid soluble
+nutrients. 
+
+In the case of vascular pathology such as CAA, the best rememdy of
+course is to clear the plaques and restore the normal
+popylations of transporters. This the CAA may itself be due to
+nutrient deficiencies and eventually correct itself
+but in the meantime surpluses may achieve similar
+results by diffusion. 
+
+
+Interpretation in part is difficult due to operating through
+taxonomy which is a combination of historical obervations 
+with some modifications for molecular "closeness."  Phenotype
+and even genotype/plasmids  are not known but may be inferred from the
+16s sequence and overall ecology likely to host the given
+abundance sets. Adding mRNA data  may reduce ambiguity with
+expression of nutrient synethesis or aqusition genes or known
+lifestyles invoked in known environments. Another approach
+may be to look only at the complete 16s sequence reads and
+determine if particular fragments seqgrate to disease or
+control and if they mean anything about phenotype. 
+This is a bit speculative but there is existing literature to
+classify organisms based only on 16s patterns.  
+
+
+\begin{comment}
+In previous work, I had motivated the idea that many
+afflictions of old age are the result of nutrient deficiencies largely
+due to GI problems which are often ignored. Much of this argument
+was made in a response to \mjmdisease which continues to
+be most severe in the elderly and recently described
+as specifically the frail elderly or those most resembling
+the picture of classic starvation.
+Alzheimer's disease remains as an outstanding age-correlated disease.
+While some drug approvals have been predicated on amyloid beta
+removal, current trial performance is limited and real-world
+experience unclear. A recent work describing the microbiome of
+postmortem brain samples distinguished by AD status highlighted
+organisms with known relationships to ambient tryptophan, tyrosine or
+metabolites such as serotonin or benzene derivatives. 
+
+The ability to do "clean" experiments on biological entities
+is largely an illustion. However, even ambiguous data have value
+if they are analyzed that way. Correlations may be useful but
+any intervention is predicated on some caisality even
+if that is never entirely elucidated or even stated.
+And of course they fail due to only an imaginary re3ationship.
+
+Microbiomes would unlikely be considered  clean or simple
+experiments but given enough organism abundances, and knowledge
+of organism lifestyle, some inferences may be made about importat
+states or ecology that may not be obvious a priori or compelling
+enough to do tests for specific metabolites. Genotypes as
+reflected in 16s rRNA and perhaps phenotypes as reflected in 
+mRNA sequencing may be good open ended tests but yield in
+essence "transform data" similar to say fourier or other techniques.
+
+Some recent work on miRNA pointed to a causal role for MEG3
+in neuron loss in AD patients prompting the addition of another
+target to attack. However, there is some indication even this
+may reflect Trp limitations. 
+  
+
+\end{comment}
+
+
+
+
+\section{Conclusion}
+The top-line microbiome patterns of the subject paper 
+\cite{10.3389/fcimb.2023.1123228} 
+can be interpretted as demonstrating a role for symbiotic organisms
+acquired as early as conception or the peri-natal period 
+combinted with  measurment of  the brain environment properties likely to be
+improtant to neuronal functioning. 
+The organisms more abundant
+in the control brains 
+may thrive in setting rich in amino acid derived neutotransmitter
+skeletons or 
+may be beneficial for plants and consequentially
+or coincidnetally have similar relationships to brain 
+by aiding nutrient uptake among other functions. They
+generally are more competitive in environments presumed
+healthy for the brain and maybe with some toxic metals present. 
+Those more abundant in the AD brain almost exclusively 
+would benefit from persumed deleterious states of 
+depeted 5HT, incrased iron ( speculating heme derived ),
+and increased methanol from endogenous metabolism. 
+Staphylococcus eepidermidis is a notable standout however
+as a potential pathogen able to cause brain damage.
+Further work should explore larger patterns of possible pathogen
+involvement in clinical progression.  
+While likely coincidental, to physical similarity between
+plant root and axon may be worthy further consideration.
+A lot of unrelated results can be unified into a nutritional framework
+with tryptophan being one of the preominent recurring components.
+Earlier predictions emphasizing Trp, Tyr, and vitamin K
+for \mjmdisease  have not been significantly tested but 
+evolving evidence exaplored in the light of cause and effect
+rather than a spercific coincidence supports their utlity
+in old age conditions. Further work on microbial patterns including
+metabolic phenotype may be helpful. Nutritional experiments probably
+need to be more comprehensive including several nutrients, exlduing
+others, and including solubility enhancements perhaps similar
+to those employed by the organisms overabundant in the healthy brains.  
+And its important to continue to question assumptions just in 
+case lead can make your garden grow and feed your head.
+
+\section{Supplemental Information}
+
+\subsection{Computer Code}
+
+
+\begin{lstlisting}
+
+
+\end{lstlisting}
+\section{Bibliography}
+
+
+\bibliography{\mjmbasename,\mjmaddbio}
+\bibliographystyle{plainurl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments} 
+
+% \input{generalack.tex}
+\begin{enumerate}
+\item Nikki Schultek for brining this work \cite{Schultek_Nikki_Schultek_LinkedIn_2023} as well as the infectious hypothesis to my attention. 
+\item Pubmed eutils facilities and the basic research it provides. 
+\item Free software including Linux, R, LaTex  etc.
+\item Thanks everyone who contributed incidental support. 
+\item I have to credit my own software such as bash scripts
+ and of course TooBibi\cite{mmarchywka-MJM-2021-002-v0.1.1-rg} for facilitating citation discovery. 
+\end{enumerate}
+
+\end{acknowledgments}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\appendix
+
+
+\section{ Statement of Conflicts }
+ No specific funding was used in this effort and there are no financial
+relationships with others that could create a conflict of interest. 
+
+\section{About the Authors}
+This work was performed at a dog rescue run by Barbara Cade and
+housed in rural Georgia.  The author of this report 
+,Mike Marchywka,
+has a background in electrical engineering and 
+has done extensive research using free online literature sources.  
+I hope to find additional people interested in critically 
+examining the results.
+
+\section{Interpretation Issues- General and Specific }
+\label{appendix:interp}
+
+
+However, increased abundance simply indicates comparative fitness
+increase. Assuming histidine is limiting, that may be due to
+increased supply due to host signalling or a virulent
+organism releasing it or failure of senescent neurons to 
+compete. All fitness arguments and static levels need to
+be carefully considered with rate equations that include
+feedback for source control.  
+
+While trying to generate hypotheses about cause and effect
+in order to ultiamtely design a useful intervention, its
+important to remember some caveats specific to these data
+and ambient nutrient levels. 
+The features and citations picked out for this work may be
+influenced by literature skew towards trendy topics and
+selection bias. 
+The data are all relative
+abundances so no real inferences about absolute
+amounts can be made and all the processings
+steps employed by the original authors have not been
+explored. Much of the analysis will now depend
+on reasoning such as "nutrient X favors organism Y"
+but the available amount of "X" could itself be
+due to many factors. Ideally a rate equation
+should be written to account for all sources and sinks
+of "X" but even in that case both are likely to be
+controlled by feedback mechanisms. Tryptophan along
+with biotin have been shown to be exported in
+times expected to beneeded by the brain but
+transport into the CNS may be impeded. 
+
+
+
+The relationship between microbe relative abundance,
+nutrient status, and brain health could be quite complicated
+even if fitness could be easily related to nutrient
+concentration. The limiting nutrient could exist
+in amounts determined by various feedback signals
+from functioning brain or be limited by supply and
+vascular function. High concentration could even reflect
+low uptake by neurons in some diseased states. A rate
+equation with the right control terms could show the complexity
+of infering cause and effect. 
+
+
+
+
+\section{Symbols, Abbreviations and Colloquialisms}
+
+\begin{comment}
+% grep "[A-Z][A-Z]" paradox.tex | sed -e 's/[^A-Z]/\n/g' | grep "[A-Z]" | sort | uniq -c
+% cat  paradox.tex | sed -e 's/  */\n/g' | grep "[A-Z][A-Z]"  | grep -v "[^A-Z]" | sort | uniq  |awk '{print $0" &   \\\\"; }'
+\end{comment}
+
+
+%\abbreviations{The following abbreviations are used in this manuscript:\\
+%\begin{table}
+\noindent
+\begin{tabular}{@{}ll}
+%SMVT & Sodium dependent Multi-Vitamin Transporter\\
+TERM & definition and meaning   \\
+\hline
+%TLA & Three letter acronym\\
+%LD & linear dichroism
+\end{tabular} % }
+%\end{table}
+
+% https://tex.stackexchange.com/questions/5957/bibtex-entry-for-white-papers-and-technical-reports
+
+\section{General caveats and disclaimer }
+\label{appendix:caveats}
+
+%\input{disclaimer-informal.tex}
+\input{disclaimer-gaslight.tex}
+\input{disclaimer-status.tex}
+
+\section{ A basline nutrient outline  }
+\label{appendix:baseline}
+\input{keep/baselinevitamins.tex}
+
+\section{Citing this as a tech report or white paper }
+\label{appendix:citing}
+
+Note: This is mostly manually entered and not assured to be error free.
+
+This is tech report \mjmtrno. 
+
+\begin{table}[H] \centering
+\begin{tabular}{r|r|c|r}
+Version & Date & Comments  &  \\
+0.01 & \mjmmakedate  &  Create from empty.tex template  &  \\
+-  & \today & version  \mjmversion { }   \mjmtrno  &  \\
+1.0 & 20xx-xx-xx & First revision for distribution &  \\
+\end{tabular}
+\end{table}
+
+
+Released versions,
+
+build script needs to include empty releases.tex
+\begin{table}[H] \centering
+\begin{tabular}{|r|r|l|}
+Version & Date & URL    \\
+\hline
+\input{releases.tex}
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+% 2020-11-30 keep on same page 
+%\input{bibtex2.txt}
+
+\begin{minipage}{\linewidth}
+%\input{bibtex2.txt}
+%\input{bibtex3.txt}
+\mjmshowbib
+\end{minipage}
+
+
+
+
+
+\vspace{1cm}
+Supporting files. Note that some dates,sizes, and md5's will change as this is
+rebuilt.
+
+This really needs to include the data analysis code 
+but right now it is auto generated picking up things from prior
+build in many cases 
+\lstinputlisting{\mjmbasename.bundle_checksums}
+\end{document}
