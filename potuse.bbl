@@ -285,6 +285,14 @@ Miao Dai, Taiping Lin, Jirong Yue, and Lunzhi Dai.
   {http://dx.doi.org/10.3389/fendo.2021.725518}
   {\path{doi:10.3389/fendo.2021.725518}}.
 
+\bibitem{Datta_Ogeltree_Methanol_bioconversion_1983}
+Rathin Datta and Jacqueline Ogeltree.
+\newblock Methanol bioconversion by <i>butyribacterium
+  methylotrophicum</i>batch fermentation yield and kinetics.
+\newblock {\em Biotechnology and Bioengineering}, 25, 1983.
+\newblock Available from: \url{http://dx.doi.org/10.1002/bit.260250409}, \href
+  {http://dx.doi.org/10.1002/bit.260250409} {\path{doi:10.1002/bit.260250409}}.
+
 \bibitem{PMID37741513}
 Oriol de~Fabregues, Maria Selles, David Ramos-Vicente, Gerard Roch, Miquel
   Vila, and Jordi Bove.
@@ -439,6 +447,22 @@ Vinicius GoularteSilva and Luciana~Campos Paulino.
 \newblock Available from: \url{http://dx.doi.org/10.1111/exd.14505}, \href
   {http://dx.doi.org/10.1111/exd.14505} {\path{doi:10.1111/exd.14505}}.
 
+\bibitem{10.1093/brain/awad303}
+Stefanie Grabrucker, Moira Marizzoni, Edina SilajdUx017e[bad char
+  vv=382]iUx0107[bad~char vv=263], Nicola Lopizzo, Elisa Mombelli, Sarah
+  Nicolas, Sebastian Dohm-Hansen, Catia Scassellati, Davide~Vito Moretti,
+  Melissa Rosa, Karina Hoffmann, John~F Cryan, Olivia~F O'Leary, Jane~A
+  English, Aonghus Lavelle, Cora O'Neill, Sandrine Thuret, Annamaria Cattaneo,
+  and Yvonne~M Nolan.
+\newblock {Microbiota from Alzheimer's patients induce deficits in cognition
+  and hippocampal neurogenesis}.
+\newblock {\em Brain}, page awad303, 10 2023.
+\newblock Available from: \url{https://doi.org/10.1093/brain/awad303}, \href
+  {http://arxiv.org/abs/https://academic.oup.com/brain/advance-article-pdf/doi/10.1093/brain/awad303/52031863/awad303.pdf}
+  {\path{arXiv:https://academic.oup.com/brain/advance-article-pdf/doi/10.1093/brain/awad303/52031863/awad303.pdf}},
+  \href {http://dx.doi.org/10.1093/brain/awad303}
+  {\path{doi:10.1093/brain/awad303}}.
+
 \bibitem{Gravina_Ardalan_Chumak_Transcriptome_network_analysis_links_2023}
 Giacomo Gravina, Maryam Ardalan, Tetyana Chumak, Halfdan Rydbeck, Xiaoyang
   Wang, Carl~Joakim Ek, and Carina Mallard.
@@ -480,6 +504,16 @@ Jae-Hyeok Heo, Dong-Gyu Im, Seung-Hyeon Lee, and Jin-Young Ahn.
   \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5144472/}, \href
   {http://dx.doi.org/10.4103/0972-2327.194426}
   {\path{doi:10.4103/0972-2327.194426}}.
+
+\bibitem{PabloIvanNikel_Establishing_Butyribacterium_methylotrophicum_2022}
+Jonathan~R. Humphreys, Skyler~D. Hebdon, Holly Rohrer, Lauren Magnusson, Chris
+  Urban, Yi-Pei Chen, and Jonathan Lo.
+\newblock Establishing {\it butyribacterium methylotrophicum} as a platform
+  organism for the production of biocommodities from liquid c{ }$_{\textrm{1}}$
+  metabolites.
+\newblock {\em Applied and Environmental Microbiology}, 88, 03 2022.
+\newblock Available from: \url{http://dx.doi.org/10.1128/aem.02393-21}, \href
+  {http://dx.doi.org/10.1128/aem.02393-21} {\path{doi:10.1128/aem.02393-21}}.
 
 \bibitem{10.1371/journal.ppat.1010929}
 Vojtechova Iveta, Machacek Tomas, Kristofikova Zdenka, Stuchlik Ales, and Tomas
@@ -576,6 +610,14 @@ Kairi Koort, Kristiina S\~{o}sa, Silver T\"{u}rk, Eleri Lapp, Elle Talving,
 \newblock {\em Acta Obstetricia et Gynecologica Scandinavica}, 102, 2023.
 \newblock Available from: \url{http://dx.doi.org/10.1111/aogs.14598}, \href
   {http://dx.doi.org/10.1111/aogs.14598} {\path{doi:10.1111/aogs.14598}}.
+
+\bibitem{PMC3966177}
+Scott~J. Kramer and Mark~B. Pochapin.
+\newblock Gastric phytobezoar dissolution with ingestion of diet coke and
+  cellulase.
+\newblock {\em Gastroenterology \& Hepatology}, pages 770--2, Nov 2012.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3966177/}.
 
 \bibitem{Kushwaha2017}
 Anamika Kushwaha, Radha Rani, Sanjay Kumar, Tarence Thomas, Arun~Alfred David,
@@ -759,6 +801,14 @@ Mike~J Marchywka.
 \newblock Available from:
   \url{https://www.researchgate.net/publication/353946686_Draft_table_comparing_expectations_to_recent_results_with_covid-19}.
 
+\bibitem{marchywka-MJM-2021-014-0.80-rg}
+Mike~J Marchywka.
+\newblock Wetting tryptophan with calcium pantothenate.
+\newblock techreport MJM-2021-014, not institutionalized, independent, 306
+  Charles Cox , Canton GA 30115, 12 2021.
+\newblock Available from:
+  \url{https://www.researchgate.net/publication/356785163_Wetting_Tryptophan_With_Calcium_Pantothenate}.
+
 \bibitem{marchywka-MJM-2022-013-0.10}
 Mike~J Marchywka.
 \newblock Clinical and microbiological improvement in dog after metal and
@@ -776,6 +826,14 @@ Mike~J Marchywka.
   Charles Cox , Canton GA 30115, 1 2022.
 \newblock Available from:
   \url{https://www.researchgate.net/publication/357517852_Experiences_with_a_Family_of_Science_Based_Kitchen_Snacks_for_Dogs}.
+
+\bibitem{marchywka-MJM-2022-009-0.50rg}
+Mike~J Marchywka.
+\newblock Happy again : Possible canine riboflavin deficiency.
+\newblock techreport MJM-2022-009, not institutionalized, independent, 306
+  Charles Cox , Canton GA 30115, 3 2022.
+\newblock Available from:
+  \url{https://www.researchgate.net/publication/359504498_Happy_Again_Possible_Canine_Riboflavin_Deficiency}.
 
 \bibitem{marchywka-MJM-2022-015-0.20c}
 Mike~J Marchywka.
@@ -1230,6 +1288,19 @@ Nikki Schultek.
 \newblock Available from:
   \url{https://www.linkedin.com/feed/update/urn:li:activity:7108409998031941632/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A7108409998031941632%2C7108889485295157248)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(7108889485295157248%2Curn%3Ali%3Aactivity%3A7108409998031941632)}.
 
+\bibitem{PMC6382411}
+Julie Schulthess, Sumeet Pandey, Melania Capitani, Kevin~C. Rue-Albrecht,
+  Isabelle Arnold, Fanny Franchini, Agnieszka Chomka, Nicholas~E. Ilott,
+  Daniel~G.W. Johnston, Elisabete Pires, James McCullagh, Stephen~N. Sansom,
+  Carolina~V. Arancibia-Crcamo, Holm~H. Uhlig, and Fiona Powrie.
+\newblock The short chain fatty acid butyrate imprints an antimicrobial program
+  in macrophages.
+\newblock {\em Immunity}, pages 432--445.e7, Feb 2019.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6382411/}, \href
+  {http://dx.doi.org/10.1016/j.immuni.2018.12.018}
+  {\path{doi:10.1016/j.immuni.2018.12.018}}.
+
 \bibitem{Shehzadi_Fatima_Imran_Ecology_bacterial_endophytes_2016}
 M.~Shehzadi, K.~Fatima, A.~Imran, M.~S. Mirza, Q.~M. Khan, and M.~Afzal.
 \newblock Ecology of bacterial endophytes associated with wetland plants
@@ -1251,6 +1322,15 @@ Roberto Siani, Georg Stabl, Caroline Gutjahr, Michael Schloter, and Viviane
 \newblock Available from:
   \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8767351/}, \href
   {http://dx.doi.org/10.1099/mgen.0.000666} {\path{doi:10.1099/mgen.0.000666}}.
+
+\bibitem{InesACardosoPereira_Physiological_genomic_sulfur_2021}
+Min~Sub Sim, Connor~T. Skennerton, and Victoria~J. Orphan.
+\newblock Physiological, genomic, and sulfur isotopic characterization of
+  methanol metabolism by desulfovibrio carbinolicus.
+\newblock {\em PLOS ONE}, 16, 01 2021.
+\newblock Available from: \url{http://dx.doi.org/10.1371/journal.pone.0245069},
+  \href {http://dx.doi.org/10.1371/journal.pone.0245069}
+  {\path{doi:10.1371/journal.pone.0245069}}.
 
 \bibitem{PMC6863301}
 Purushottam~Kumar Singh, Anamika Kushwaha, Nidhi Hans, Aishvarya Gautam, and
@@ -1497,6 +1577,27 @@ B.~Widner, F.~Leblhuber, J.~Walli, G.~P. Tilz, U.~Demel, and D.~Fuchs.
 \newblock {\em Journal of Neural Transmission}, 107(3):343--353, Mar 2000.
 \newblock Available from: \url{https://doi.org/10.1007/s007020050029}, \href
   {http://dx.doi.org/10.1007/s007020050029} {\path{doi:10.1007/s007020050029}}.
+
+\bibitem{PMID37848036}
+Andrea~C Wong, Ashwarya~S Devason, Iboro~C Umana, Timothy~O Cox, Lenka
+  Dohnalova, Lev Litichevskiy, Jonathan Perla, Patrick Lundgren, Zienab Etwebi,
+  Luke~T Izzo, Jihee Kim, Monika Tetlak, Helene~C Descamps, Simone~L Park,
+  Stephen Wisser, Aaron~D McKnight, Ryan~D Pardy, Junwon Kim, Niklas Blank,
+  Shaan Patel, Katharina Thum, Sydney Mason, Jean-Christophe Beltra, Michael~F
+  Michieletto, Shin~Foong Ngiow, Brittany~M Miller, Megan~J Liou, Bhoomi Madhu,
+  Oxana Dmitrieva-Posocco, Alex~S Huber, Peter Hewins, Christopher Petucci,
+  Candice~P Chu, Gwen Baraniecki-Zwil, Leila~B Giron, Amy~E Baxter, Allison~R
+  Greenplate, Charlotte Kearns, Kathleen Montone, Leslie~A Litzky, Michael
+  Feldman, Jorge Henao-Mejia, Boris Striepen, Holly Ramage, Kellie~A Jurado,
+  Kathryn~E Wellen, Una O'Doherty, Mohamed Abdel-Mohsen, Alan~L Landay, Ali
+  Keshavarzian, Timothy~J Henrich, Steven~G Deeks, Michael~J Peluso, Nuala~J
+  Meyer, E~John Wherry, Benjamin~A Abramoff, Sara Cherry, Christoph~A Thaiss,
+  and Maayan Levy.
+\newblock Serotonin reduction in post-acute sequelae of viral infection.
+\newblock {\em Cell}, 10 2023.
+\newblock Available from: \url{https://pubmed.ncbi.nlm.nih.gov/37848036/},
+  \href {http://dx.doi.org/10.1016/j.cell.2023.09.013}
+  {\path{doi:10.1016/j.cell.2023.09.013}}.
 
 \bibitem{XU2022113652}
 Wenjie Xu, Ziyi Yang, Hao Tang, Chen Wang, and Zhengfang Ye.

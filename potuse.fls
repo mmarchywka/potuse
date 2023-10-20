@@ -433,6 +433,7 @@ INPUT /home/marchywka/.texlive2019/texmf-var/luatex-cache/generic-dev/fonts/otl/
 INPUT /home/marchywka/.texlive2019/texmf-var/luatex-cache/generic-dev/fonts/otl/lmmono9-regular.luc
 INPUT ./potuse.bbl
 INPUT ./potuse.bbl
+INPUT /home/marchywka/.texlive2019/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman5-regular.luc
 INPUT /home/documents/latex/share/includes/disclaimer-gaslight.tex
 INPUT /home/documents/latex/share/includes/disclaimer-gaslight.tex
 INPUT /home/documents/latex/share/includes/disclaimer-status.tex

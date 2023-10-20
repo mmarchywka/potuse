@@ -31,45 +31,45 @@ Warning--empty year in PMC9004399
 Warning--empty journal in Schultek_Nikki_Schultek_LinkedIn_2023
 Warning--empty year in VanAssche_Assche_
 Warning--empty year in Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_
-You've used 162 entries,
+You've used 171 entries,
             2760 wiz_defined-function locations,
-            1932 strings with 95760 characters,
-and the built_in function-call counts, 92857 in all, are:
-= -- 9816
-> -- 5507
-< -- 46
-+ -- 2192
-- -- 2014
-* -- 7274
-:= -- 14476
-add.period$ -- 653
-call.type$ -- 162
-change.case$ -- 1485
+            1995 strings with 100643 characters,
+and the built_in function-call counts, 99693 in all, are:
+= -- 10476
+> -- 6077
+< -- 51
++ -- 2420
+- -- 2232
+* -- 7874
+:= -- 15598
+add.period$ -- 689
+call.type$ -- 171
+change.case$ -- 1621
 chr.to.int$ -- 0
-cite$ -- 172
-duplicate$ -- 2377
-empty$ -- 6401
-format.name$ -- 2014
-if$ -- 21675
+cite$ -- 181
+duplicate$ -- 2519
+empty$ -- 6750
+format.name$ -- 2232
+if$ -- 23161
 int.to.chr$ -- 0
-int.to.str$ -- 162
-missing$ -- 157
-newline$ -- 979
-num.names$ -- 327
-pop$ -- 1824
+int.to.str$ -- 171
+missing$ -- 164
+newline$ -- 1033
+num.names$ -- 345
+pop$ -- 1980
 preamble$ -- 1
-purify$ -- 1328
+purify$ -- 1455
 quote$ -- 0
-skip$ -- 5191
+skip$ -- 5495
 stack$ -- 0
-substring$ -- 2245
-swap$ -- 839
-text.length$ -- 46
+substring$ -- 2364
+swap$ -- 895
+text.length$ -- 51
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 638
+type$ -- 674
 warning$ -- 10
-while$ -- 432
-width$ -- 165
-write$ -- 2249
+while$ -- 455
+width$ -- 174
+write$ -- 2374
 (There were 2 error messages)
