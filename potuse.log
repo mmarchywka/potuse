@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  20 OCT 2023 09:08
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  22 OCT 2023 21:26
  restricted system commands enabled.
  file:line:error style messages enabled.
 **potuse.tex
@@ -1080,79 +1080,79 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 (/home/documents/latex/share/includes/mjmlistings.tex)) (./potuse.last_page)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 141.
+(hyperref)                removing `\kernel@ifnextchar' on input line 142.
 
 \desttabw=\skip108
 \chainwidth=\skip109
@@ -1168,37 +1168,37 @@ Excluding comment 'badmathcomment' Excluding comment 'showworkcomment'
 (./potuse.aux)
 \openout1 = potuse.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 26
-6.
+7.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
 Class revtex4 Info: Unrecognized array package. Please update this document clas
-s! (Proceeding with fingers crossed.) on input line 266.
+s! (Proceeding with fingers crossed.) on input line 267.
 Class revtex4 Info: Patching unrecognized longtable package. (Proceeding with fi
-ngers crossed) on input line 266.
-Class revtex4 Info: cite was not loaded (OK!) on input line 266.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 266.
+ngers crossed) on input line 267.
+Class revtex4 Info: cite was not loaded (OK!) on input line 267.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 267.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1230,7 +1230,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 \AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring ON on input line 266.
+Package hyperref Info: Link coloring ON on input line 267.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1243,16 +1243,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 266.
-LaTeX Info: Redefining \pageref on input line 266.
-LaTeX Info: Redefining \nameref on input line 266.
+LaTeX Info: Redefining \ref on input line 267.
+LaTeX Info: Redefining \pageref on input line 267.
+LaTeX Info: Redefining \nameref on input line 267.
 
 (./potuse.out) (./potuse.out)
 \@outlinefile=\write5
 
 \openout5 = potuse.out
 
-Package chemgreek Info: Activating mapping `default' on line 266.
+Package chemgreek Info: Activating mapping `default' on line 267.
 
  ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
@@ -1265,45 +1265,50 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \c@FBLTpage=\count367
 )
 \c@lstlisting=\count368
-LaTeX Font Info:    Trying to load font information for U+msa on input line 266.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 266.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 307--365
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 308--366
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--365
+Underfull \hbox (badness 10000) in paragraph at lines 308--366
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./potuse.toc
+Overfull \hbox (5.0pt too wide) detected at line 14
+ \TU/lmr/m/n/10 10
+ []
+
+
 Overfull \hbox (5.0pt too wide) detected at line 15
  \TU/lmr/m/n/10 11
  []
 
 
 Overfull \hbox (5.0pt too wide) detected at line 16
- \TU/lmr/m/n/10 11
+ \TU/lmr/m/n/10 12
  []
 
 
 Overfull \hbox (5.0pt too wide) detected at line 17
- \TU/lmr/m/n/10 11
+ \TU/lmr/m/n/10 12
  []
 
 
 Overfull \hbox (5.0pt too wide) detected at line 18
- \TU/lmr/m/n/10 11
+ \TU/lmr/m/n/10 12
  []
 
 
@@ -1318,237 +1323,237 @@ Overfull \hbox (5.0pt too wide) detected at line 20
 
 
 Overfull \hbox (5.0pt too wide) detected at line 21
- \TU/lmr/m/n/10 22
+ \TU/lmr/m/n/10 23
  []
 
 
 Overfull \hbox (5.0pt too wide) detected at line 23
- \TU/lmr/m/n/10 23
- []
-
-
-Overfull \hbox (5.0pt too wide) detected at line 24
- \TU/lmr/m/n/10 23
- []
-
-
-Overfull \hbox (5.0pt too wide) detected at line 25
- \TU/lmr/m/n/10 23
- []
-
-
-Overfull \hbox (5.0pt too wide) detected at line 26
- \TU/lmr/m/n/10 23
- []
-
-
-Overfull \hbox (5.0pt too wide) detected at line 27
- \TU/lmr/m/n/10 23
- []
-
-
-Overfull \hbox (5.0pt too wide) detected at line 28
  \TU/lmr/m/n/10 24
  []
 
 
-Overfull \hbox (5.0pt too wide) detected at line 29
+Overfull \hbox (5.0pt too wide) detected at line 24
+ \TU/lmr/m/n/10 24
+ []
+
+
+Overfull \hbox (5.0pt too wide) detected at line 25
+ \TU/lmr/m/n/10 24
+ []
+
+
+Overfull \hbox (5.0pt too wide) detected at line 26
+ \TU/lmr/m/n/10 24
+ []
+
+
+Overfull \hbox (5.0pt too wide) detected at line 27
+ \TU/lmr/m/n/10 24
+ []
+
+
+Overfull \hbox (5.0pt too wide) detected at line 28
  \TU/lmr/m/n/10 25
+ []
+
+
+Overfull \hbox (5.0pt too wide) detected at line 29
+ \TU/lmr/m/n/10 26
  []
 
 )
 \tf@toc=\write6
 
 \openout6 = potuse.toc
- [2] [3]
+ [2] Excluding 'comment' comment. [3]
 
-Package hyperref Warning: Ignoring empty anchor on input line 567.
+Package hyperref Warning: Ignoring empty anchor on input line 597.
 
-Excluding 'comment' comment. [4]
-Underfull \hbox (badness 1983) in paragraph at lines 1063--1063
+Excluding 'comment' comment. [4] [5]
+Underfull \hbox (badness 1983) in paragraph at lines 1156--1156
 \TU/lmr/m/n/10 abun-dant in in-testi-nal mi-cro-biome of AD pa-tients [[]] sug-
 gest-ing the brain and in-testi-nal abun-dances
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 1063--1063
+Underfull \hbox (badness 1867) in paragraph at lines 1156--1156
 \TU/lmr/m/n/10 may cor-re-late al-though not men-tioned in a sim-i-lar 2017 ana
 l-y-sis [[]] or a re-cent re-view ar-ti-cle [[]].
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1063--1063
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1156--1156
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1156
 
  []
 
-[5]
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 1065--1065
+
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1158--1158
 [][]
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1158--1158
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1158
 
  []
 
 [6] [7]
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 1227--1228
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1320--1321
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+Underfull \hbox (badness 10000) in paragraph at lines 1320--1321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1250--1265
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1358
 []\TU/lmr/m/n/10 Sup-ple-ment us-age re-lated to SAM may need to be more care-f
 ully con-sid-ered [[]].
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1250--1265
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1343--1358
 []
  []
 
 [8] [9]
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 1487--1488
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1604--1605
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1488
+Underfull \hbox (badness 10000) in paragraph at lines 1604--1605
 
  []
 
-
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1532--1569
+[10]
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1649--1686
 []
  []
 
-[10] Excluding 'comment' comment. [11] (./potuse.bbl [12] [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 839--848
+Excluding 'comment' comment. [11] (./potuse.bbl [12] [13] [14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 913--922
 \TU/lmtt/m/n/9 Vitamin_K_Literature_in_the_Conext_of_a_non-[]Monotonic_Response
 _Curve_Local_vs_Global_Optima_and_other_
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 850--857
+Underfull \hbox (badness 5316) in paragraph at lines 924--931
 []\TU/lmr/m/n/9 M.J. Marchy-wka.  On the age dis-tri-bu-tion of sars-cov-2 pa-t
 ients.  Tech-ni-cal Re-port MJM-2020-002-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 850--857
+Underfull \hbox (badness 2600) in paragraph at lines 924--931
 \TU/lmr/m/n/9 0.10, not in-sti-tu-tion-al-ized , in-de-pen-dent, 306 Charles Co
 x , Can-ton GA 30115, 7 2020.  Ver-sion 0.10
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 850--857
+Underfull \hbox (badness 1748) in paragraph at lines 924--931
 \TU/lmr/m/n/9 , may change sign-f-i-cantly if less than 1.00.  Avail-able from:
  [][]$\TU/lmtt/m/n/9 https://www.linkedin.com/posts/marchywka_
  []
 
-[16]
-Underfull \hbox (badness 4927) in paragraph at lines 877--885
+
+Underfull \hbox (badness 4927) in paragraph at lines 951--959
 []\TU/lmr/m/n/9 M.J. Marchy-wka.  Sup-ple-ment us-age in-clud-ing vi-ta-min k b
 y a heart-worm pos-i-tive preg-nant pit bull
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 877--885
+Underfull \hbox (badness 2384) in paragraph at lines 951--959
 \TU/lmr/m/n/9 and her pup-pies.  Tech-ni-cal Re-port MJM-2021-003, not in-sti-t
 u-tion-al-ized , in-de-pen-dent, 306 Charles Cox
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 877--885
+Underfull \hbox (badness 4608) in paragraph at lines 951--959
 \TU/lmr/m/n/9 , Can-ton GA 30115, 05 2021.  Ver-sion 0.50 , may change sign-f-i
 -cantly if less than 1.00.  Avail-
  []
 
-
-Underfull \hbox (badness 6893) in paragraph at lines 974--982
+[17]
+Underfull \hbox (badness 6893) in paragraph at lines 1058--1066
 []\TU/lmr/m/n/9 Emilia Moraw-iec, MichaUx0142[bad vv=322] Cz-er-wiUx0144[bad ch
 ar vv=324]ski, Anna Bed-narska Cz-er-
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 1015--1023
+Underfull \hbox (badness 4531) in paragraph at lines 1099--1107
 []\TU/lmr/m/n/9 Koji Narui, Nori-hisa Noguchi, Aya Saito, Kazuhiro Kakimi, Nobo
 ru Mo-to-mura, Kinya Kubo, Shinichi
  []
 
-[17] [18]
-Underfull \hbox (badness 2065) in paragraph at lines 1284--1290
+[18] [19]
+Underfull \hbox (badness 2065) in paragraph at lines 1388--1394
 []\TU/lmr/m/n/9 Nikki Schul-tek.  Nikki schul-tek on linkedin: Could a break-do
 wn in the brains net-works al-low in-fec-tions
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 1284--1290
+Underfull \hbox (badness 3907) in paragraph at lines 1388--1394
 \TU/lmr/m/n/9 to con-tribute touni-codeel-lip-sis.  09 2023.  Avail-able from: 
 [][]$\TU/lmtt/m/n/9 https://www.linkedin.com/feed/update/urn:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1284--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1388--1394
 \TU/lmtt/m/n/9 li:activity:7108409998031941632/?commentUrn=urn%3Ali%3Acomment%3
 A(activity%3A7108409998031941632%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1284--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1388--1394
 \TU/lmtt/m/n/9 2C7108889485295157248)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(
 7108889485295157248%2Curn%3Ali%
  []
 
-[19] [20] [21]) [22] Excluding 'comment' comment.
+[20] [21] [22]) [23] Excluding 'comment' comment.
 (/home/documents/latex/share/includes/disclaimer-gaslight.tex)
 (/home/documents/latex/share/includes/disclaimer-status.tex)
-(./keep/baselinevitamins.tex [23]) [24] (./releases.tex)
-Overfull \hbox (10.0pt too wide) in paragraph at lines 1905--1910
+(./keep/baselinevitamins.tex [24]) [25] (./releases.tex)
+Overfull \hbox (10.0pt too wide) in paragraph at lines 2027--2032
 []$[]$ 
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 1922.
-(./potuse.bundle_checksums [25]) [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1923.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1923.
+put line 2044.
+(./potuse.bundle_checksums [26]) [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2045.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2045.
  (./potuse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1923.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1923.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2045.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2045.
 Package rerunfilecheck Info: File `potuse.out' has not changed.
-(rerunfilecheck)             Checksum: AC0C539F47A4A2A1B9ACEA20711A12C0;4705.
+(rerunfilecheck)             Checksum: 5AF24EBB717E1D55D0C06BC4343BFA35;4715.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32824 strings out of 481365
- 596199,1144653 words of node,token memory allocated
- 1778 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 122 attribute, 81 glue_spe
-c, 122 attribute_list, 115 pdf_action nodes
-   avail lists: 1:2,2:6495,3:939,4:235,5:14189,6:99,7:17009,8:289,9:28472,10:37,
-11:1518
- 48352 multiletter control sequences out of 65536+600000
+ 32899 strings out of 481365
+ 596201,1144653 words of node,token memory allocated
+ 1868 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 131 attribute, 81 glue_spe
+c, 131 attribute_list, 124 pdf_action nodes
+   avail lists: 2:6801,3:957,4:240,5:14877,6:98,7:17077,8:293,9:29844,10:36,11:1
+592
+ 48407 multiletter control sequences out of 65536+600000
  103 fonts using 8931187 bytes
- 79i,12n,75p,538b,1567s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 79i,12n,75p,538b,1595s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf
-/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/
-public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroma
+/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/
+public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroma
 n7-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-bold.otf></us
 r/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fo
 nts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf/fonts/opentype/pub
@@ -1559,10 +1564,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb>
-Output written on potuse.pdf (26 pages, 297254 bytes).
+Output written on potuse.pdf (27 pages, 312963 bytes).
 
-PDF statistics: 1274 PDF objects out of 1440 (max. 8388607)
- 1195 compressed objects within 12 object streams
- 281 named destinations out of 1000 (max. 131072)
+PDF statistics: 1370 PDF objects out of 1440 (max. 8388607)
+ 1289 compressed objects within 13 object streams
+ 301 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

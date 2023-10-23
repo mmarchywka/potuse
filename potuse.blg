@@ -6,13 +6,15 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated field_info (elt_size=4) to 10292 items from 5000.
 Database file #1: potuse.bib
 Warning--entry type for "Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015" isn't style-file defined
 --line 4366 of file potuse.bib
+Warning--entry type for "Coates_Uranium_Immobilization_through_2009" isn't style-file defined
+--line 6103 of file potuse.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Database file #2: mjm_tr.bib
-Database file #3: releases.bib
-Database file #4: dailysnapx.bib
+Database file #2: releases.bib
+Database file #3: dailysnapx.bib
 Repeated entry---line 1466 of file dailysnapx.bib
  : @article{Barazani2000
  :                      ,
@@ -31,45 +33,45 @@ Warning--empty year in PMC9004399
 Warning--empty journal in Schultek_Nikki_Schultek_LinkedIn_2023
 Warning--empty year in VanAssche_Assche_
 Warning--empty year in Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_
-You've used 171 entries,
+You've used 189 entries,
             2760 wiz_defined-function locations,
-            1995 strings with 100643 characters,
-and the built_in function-call counts, 99693 in all, are:
-= -- 10476
-> -- 6077
-< -- 51
-+ -- 2420
-- -- 2232
-* -- 7874
-:= -- 15598
-add.period$ -- 689
-call.type$ -- 171
-change.case$ -- 1621
+            2130 strings with 110494 characters,
+and the built_in function-call counts, 110141 in all, are:
+= -- 11552
+> -- 6765
+< -- 54
++ -- 2694
+- -- 2486
+* -- 8722
+:= -- 17263
+add.period$ -- 760
+call.type$ -- 189
+change.case$ -- 1802
 chr.to.int$ -- 0
-cite$ -- 181
-duplicate$ -- 2519
-empty$ -- 6750
-format.name$ -- 2232
-if$ -- 23161
+cite$ -- 199
+duplicate$ -- 2760
+empty$ -- 7441
+format.name$ -- 2486
+if$ -- 25556
 int.to.chr$ -- 0
-int.to.str$ -- 171
-missing$ -- 164
-newline$ -- 1033
-num.names$ -- 345
-pop$ -- 1980
+int.to.str$ -- 189
+missing$ -- 181
+newline$ -- 1140
+num.names$ -- 381
+pop$ -- 2196
 preamble$ -- 1
-purify$ -- 1455
+purify$ -- 1618
 quote$ -- 0
-skip$ -- 5495
+skip$ -- 6047
 stack$ -- 0
-substring$ -- 2364
-swap$ -- 895
-text.length$ -- 51
+substring$ -- 2566
+swap$ -- 970
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 674
+type$ -- 746
 warning$ -- 10
-while$ -- 455
-width$ -- 174
-write$ -- 2374
+while$ -- 499
+width$ -- 192
+write$ -- 2622
 (There were 2 error messages)
