@@ -6,7 +6,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated field_info (elt_size=4) to 10292 items from 5000.
+Reallocated field_info (elt_size=4) to 10460 items from 5000.
 Database file #1: potuse.bib
 Warning--entry type for "Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015" isn't style-file defined
 --line 4366 of file potuse.bib
@@ -33,45 +33,45 @@ Warning--empty year in PMC9004399
 Warning--empty journal in Schultek_Nikki_Schultek_LinkedIn_2023
 Warning--empty year in VanAssche_Assche_
 Warning--empty year in Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_
-You've used 189 entries,
+You've used 195 entries,
             2760 wiz_defined-function locations,
-            2130 strings with 110494 characters,
-and the built_in function-call counts, 110141 in all, are:
-= -- 11552
-> -- 6765
+            2175 strings with 115176 characters,
+and the built_in function-call counts, 113745 in all, are:
+= -- 11916
+> -- 7032
 < -- 54
-+ -- 2694
-- -- 2486
-* -- 8722
-:= -- 17263
-add.period$ -- 760
-call.type$ -- 189
-change.case$ -- 1802
++ -- 2801
+- -- 2586
+* -- 9027
+:= -- 17858
+add.period$ -- 785
+call.type$ -- 195
+change.case$ -- 1870
 chr.to.int$ -- 0
-cite$ -- 199
-duplicate$ -- 2760
-empty$ -- 7441
-format.name$ -- 2486
-if$ -- 25556
+cite$ -- 205
+duplicate$ -- 2833
+empty$ -- 7658
+format.name$ -- 2586
+if$ -- 26359
 int.to.chr$ -- 0
-int.to.str$ -- 189
-missing$ -- 181
-newline$ -- 1140
-num.names$ -- 381
-pop$ -- 2196
+int.to.str$ -- 195
+missing$ -- 187
+newline$ -- 1177
+num.names$ -- 393
+pop$ -- 2271
 preamble$ -- 1
-purify$ -- 1618
+purify$ -- 1680
 quote$ -- 0
-skip$ -- 6047
+skip$ -- 6225
 stack$ -- 0
-substring$ -- 2566
-swap$ -- 970
+substring$ -- 2612
+swap$ -- 988
 text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 746
+type$ -- 770
 warning$ -- 10
-while$ -- 499
-width$ -- 192
-write$ -- 2622
+while$ -- 512
+width$ -- 198
+write$ -- 2707
 (There were 2 error messages)

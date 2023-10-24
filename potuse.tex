@@ -230,7 +230,6 @@ breaklines=true
 \newcommand{\mjmrefapp}[1]{Appendix   \ref{appendix:#1}}
 
 
-%cp yyy2.pdf ~/d/latex/keep/pp20171124biotin.pdf
 \newcommand{\mjmdatedplot}[1] 
 { \includegraphics[height=3in,width=\fullfigwidth]{keep/pp20171124#1} }
 % right now there are too many figs to save for the end apaprently
@@ -289,7 +288,9 @@ I hope to look at sequence level analysis. This may be  another
 case of the mixed taxonomy getting in the way of seeing
 what is really there.  A good database on metabolism
 may be helpful too.  
-
+If nothing else, compare the list here to those most abundant
+in the endometrium 
+\cite{Winters_Romero_Gervasi_Does_endometrial_cavity_2019}.
 \mjmreleasewarning
 
 \mjmstatuswarn
@@ -883,57 +884,51 @@ and ability to use plant synthesized lipids \cite{PMC8767351} .
 
 } % acidovorax
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \newcommand{\acinetobacter}{
 \mjmotu{Acinetobacter}
 \mjmotuc{Species fluctuate}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The Acinetobacter distribution appears to be the most confusing
-with junii over abundance in the control group and 
-Acinetobacter tjernbergiae in the AD brains.
-Interestingly some species can live off of tryptophan metabolite kyneurinine and
-both of these species lack a putative Mn transporter  
-\cite{10.1371/journal.pgen.1010020}
-( that work \cite{10.1371/journal.pgen.1010020} also has some
-details of genetics among the pathogens ). 
-Acinetobacter junii was the organism most overabundant in
-the control group. At least in combination with other organisms
-appears to promote plant growth \cite{Padmavathi2015}.
-Described as "hypertolerant" to metals such as
-arsenic \cite{10.1111/jam.14179} and lead \cite{Kushwaha2017}
-\cite{PMC6863301} %low levels of similar metals may favor it over others. 
-The Acinetobacter in general are described as versatile plant growth
+The Acinetobacter distribution is the  most confusing
+with A. junii being the most overabundant in the control group and 
+Acinetobacter tjernbergiae overabundant in the AD brains.
+The Acinetobacter species are described in general  as versatile plant growth
 promoters with beneficial effects on availability or buffering of
 nutrients like phosphate and metals \cite{MUJUMDAR2023327}.
+Some works compare the species in detail, such as 
+\cite{VanAssche_Assche_}
+\cite{10.1371/journal.pgen.1010020} 
+\cite{Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015},
+although no obvious differences between A junii and
+tjernbergiae were apparent.
+A junii was originally identified in 1985 however by its ability 
+to use L-histidine
+\cite{Kollimuttathuillam_Bethel_Shaaban_Case_Acinetobacter_2021}
+\cite{Bouvet_Grimont_Taxonomy_Genus_1986}
+and pathogenic species of Acinetobacter appear to rely on histidine
+\cite{MarvinWhiteley_Histidine_Utilization_2020}.
+It is possible that its presence reflect CNS histidine status 
+but refer to \mjmrefapp{interp} for a more complete description.
+Interestingly, some species can live off of tryptophan 
+metabolite kyneurinine and
+both of these species lack a putative Mn transporter  
+\cite{10.1371/journal.pgen.1010020}.
+At least in combination with other organisms A. junii
+appears to promote plant growth \cite{Padmavathi2015}
+and has been described as "hypertolerant" to metals such as
+arsenic \cite{10.1111/jam.14179} and lead \cite{Kushwaha2017}
+\cite{PMC6863301}. %low levels of similar metals may favor it over others. 
 A junii is rarely a human pathogen but infections have been
-documented and more likely in thos with prior antibiotic use, invasive
-procedures, or cancer \cite{Clinical_characteristics_patients_Hung_2009}
-in preterm infants
-\cite{PMC120562}.
+documented and more likely in those with prior antibiotic use, invasive
+procedures, or cancer \cite{Clinical_characteristics_patients_Hung_2009}.
+and in preterm infants \cite{PMC120562}.
 Intriguingly, it is much more common in the fecal microbiome of
 those delivered by vaginal
 birth than cesarean \cite{Pandey2012}
 and exposure of cesarean infants to maternal vaginal fluid
 improved some aspects of neurodevelopment 
 \cite{Zhou_Qiu_Wang_Effects_vaginal_microbiota_2023}.
-
-Pathogenic species of Acinetobacter appear to rely on histidine
-\cite{MarvinWhiteley_Histidine_Utilization_2020}
-A junii was originally identified in 1985 however by its ability 
-to use L-histidine
-\cite{Kollimuttathuillam_Bethel_Shaaban_Case_Acinetobacter_2021}
-\cite{Bouvet_Grimont_Taxonomy_Genus_1986}.
-It is possible that its presence reflect adequate CNS histidine
-but refer to \mjmrefapp{interp} for a more complete description.
-
-Some works compare the species in good details such as 
-\cite{VanAssche_Assche_}
-\cite{Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015}Z
-although no obvious differences between A junii and
-tjernbergiae were apparent.
-
-One work claims,
+The literature on  A. tjernbergiae is not as extensive
+but one work claims,
 " A. baylyi, A. bouvetii, A. grimontii, A. tjernbergiae,
 A. towneri, and A. tandoii are commonly found in natural
 environments but occasionally isolated in activated sludge
@@ -942,18 +937,6 @@ They are able to store phosphate as polyphosphates and may
 have potential applications in the biological removal of
 phosphates (2)."
 \cite{2011ME10179}. %  while A junii is a non-baumannii species.
-
-
-Gene clusters related to pathogenecity of calcoaceticus-baumannii
-have been explored
-\cite{10.1371/journal.pone.0090239}.
-
-
-} %\acinetobacter
-
-%Acinetobacter tjernbergiae &&& sludge uses histidine but not others  \\
-\newcommand{\tjernbergiae} { % &&& sludge uses histidine but not others  \\
-
 Substrate selections for A. tjernbergiae were listed as, 
 \cite{Carr_Kampfer_Patel_Seven_novel_species_2003}
 \begin{quote}
@@ -967,11 +950,39 @@ L-aspartate, L-glutamate, L-leucine, L-phenylalanine,
 L-tryptophan, 4-hydroxybenzoate and phenylacetate are not
 utilized.
 \end{quote}
+The most well known pathogen, A. baumanii, appears to have 
+genetic features that define a pathogenic 
+ calcoaceticus-baumannii cluster
+ \cite{10.1371/journal.pone.0090239}.
+} %\acinetobacter
 
+%Acinetobacter tjernbergiae &&& sludge uses histidine but not others  \\
+\newcommand{\tjernbergiae} { % &&& sludge uses histidine but not others  \\
 } %Acinetobacter tjernbergiae 
 
 \newcommand{\putida}{
-P. putida is known for flexibility 
+Two species of Pseudomonas, putida and thermotolerans, 
+ were overabundant in health.
+Pseudomonas in general tend to overgrowth in benzoate
+rich settings.
+Like other soil dwelling organisms, they 
+are known for degrading benzoate derived from lignin
+\cite{PMC5779716} and it could also be derived from tyrosine
+or neurotransmitters.
+Studies relating P putida and aeruginosa response
+to aromatic amino acids as in cystic fibrosid sputum 
+have shown some common and species specific features. 
+\cite{PMC2876504}.
+Repeated application of quaternary benzylalkonium chlorides to the 
+Lascaux Cave
+created an overgrowth dominated by Ralstonia and Pseudomonas
+\cite{Bastian2009}.
+This suggests a competitive advantage in aromatic rich settings 
+Swimming and surfactant production as a function of
+amino acid exposuire have been investigated at least
+for P. aeruginosa \cite{PMC94731}.
+
+However, P. putida is also known for flexibility 
 \cite{Molina_Rosa_Nogales_Pseudomonas_putida_2019}
 \cite{PMC9004399}
 suggesting its presence is not particularly informative
@@ -987,17 +998,6 @@ a high or low concentration setting but may be able to
 remove it. 
 A rough form has been found in biofilms along with
 Acinetobacter species \cite{PMC1913468}.
-However, Pseudomonads and other soil dwelling organisms 
-are known for degrading benzoate derived from lignin
-\cite{PMC5779716} and could also be derived from tyrosine
-or similar neurotransmitters.
-} % putida
-
-
- %/seedling 
-%Pseudomonas thermotolerans&&& \\
-
-\newcommand{\thermotolerans}{
 Pseudomonas thermotolerans is notable for possibly
 not using benzoate \cite{Manaia_Pseudomonas_thermotolerans_2002}.
 Although the real issue is aromatic amino acid usage and early
@@ -1007,7 +1007,13 @@ grew on tyrosine as a sole source of carbon,
 whereas only seven grew on phenylalanine as a
 sole source of carbon"
 \cite{Calhoun_Pierson_Jensen_Channel_Shuttle_Mechanism_1973}.
+} % putida
 
+
+ %/seedling 
+%Pseudomonas thermotolerans&&& \\
+
+\newcommand{\thermotolerans}{
 } %Pseudomonas thermotolerans&&& \\
 
 
@@ -1015,67 +1021,110 @@ sole source of carbon"
 \mjmotu{Cutibacterium}
 \mjmotuc{Increased in AD}
 Prior to 2016, Cutibacterium acnes was in the genus Propionibacterium
-with a 2019 proposal for supbspecies defendes added to acnes and elongatum
-which is associated with  progressive macular
+and a  2019 proposal made  supbspecies defendens and elongatum
+the latter of which is associated with  progressive macular
 hypomelanosis  rather than acne
 \cite{Dekio_McDowell_Sakamoto_Proposal_combination_2019}. 
-If it is elongatum, relationship to a pigmentation disorcer
-suggests interaction with tyrosine or tyrosinase.
-Treatments of hypomelanosis may include 
-benzoyl containing products
-\cite{PMC7772758} although transformations remain unknown,
-C. acnes is thought to be able to synthesize biotin
-as this has been recognized as a skin or hair issue
-\cite{GoularteSilva_Paulino_Ketoconazole_beyond_antifungal_activity_2022}
-and sometimes comes up in brain health. Presumably
-them low biotin would favor it and signal an unhealthy
-environment.  
-
-
-The species is itself quite diverse.
-Interestingly, it is credited as a pathogen in  many
-infections with a strain-specific antibiotic,
+The species is itself quite diverse with defendens
+associated with prostate cancer and even friend/foe status
+is questioned
+\cite{Boyanova_Cutibacterium_acnes_formerly_2023}.
+Interestingly, it is blamed  as the  pathogen in  many
+infections 
+\cite{10.3389/fmicb.2021.673845}. 
+with a strain-specific antibiotic,
 thiopeptide cutimycin, which is supposed to kill S. epidermidis
+\cite{PMC8478231}
 although the interaction appears to be two-way
-\cite{10.3389/fmicb.2021.673845}. An antibiotic  would be surprising given
-that S. epidermidis abundance has increased too. 
+\cite{10.3389/fmicb.2021.673845}. 
+C acnes elongatum is related to a pigmentation disorder
+suggesting possible  interaction with tyrosine or tyrosinase.
+Treatments of hypomelanosis may include benzoyl containing products
+\cite{PMC7772758} although transformations remain unknown,
+More generally, C acnes is associated with post inflammatory hypopigmentation
+disorders for which antibiotics appear to be part of the cure 
+\cite{Rao_Young_JacksonCowan_Post_Inflammatory_Hypopigmentation_Review_2023}.
+An antibiotic  would be surprising given
+that S. epidermidis abundance has increased too but again numbers
+and fitness are relative. 
 This could be a candidate for an AD pathogen but given its 
 ubiquity it would need other changes in the host.
-I very recent work on fungal infection found Cutibacterium 
+In very recent work on fungal infection found Cutibacterium 
 expansion in Tph-/- mice which were unable to convert tryptophan
 into 5HT \cite{Renga_DOnofrio_Pariano_Bridging_host_microbiota_2023}.
 Even though this intervention may have raised tryptophan levels,
-it acted similarly to tryptophan depletion in that the tryptophan
+it acted similarly to tryptophan depletion ot loss of serotonin
+producing cells  in that the tryptophan
 metabolite 5HT was missing allowing for proliferation. 
 "Serotonin degeneration " bas been implicated in cognitive
 declines \cite{PMID37718818} and it may not be clear
 in which direction cause and effect operate but 
 degeneration in response to limited tryptophan
 would be quite plausible. 
+Skin ecology may involve many factors and exposure to ketoconazole
+may have favored C. acnes for unclear reasons although biotin
+synthesis was considered 
+\cite{GoularteSilva_Paulino_Ketoconazole_beyond_antifungal_activity_2022}.
+
+
 } % cutibacterium}
 
 
 \newcommand{\comamonas}{
 \mjmotu{Comamonas}
 \mjmotuc{Increased in healthy}
+
+% Comamonas jiangduensis
+
+The properties and history of this genus have been well summarized
+and quoted verbtaim here,  
+\begin{quote}
+Comamonas spp. have been isolated from a broad variety of environments, including
+water, aircraft water, soil, plants, and animals [8–12]. Several Comamonas spp. have been
+investigated for their potential to degrade xenobiotic pollutants and for heavy metal
+detoxification under a variety of environmental conditions [13–19]. Comamonas spp. are
+thought to be of low virulence. They have, however, caused infections, including serious
+infection such as septicemia or endocarditis, in immunocompetent hosts [20–22]
+[ ...]
+Analysis of the scientific/medical literature showed wide-ranging types of infections
+resulting from Comamonas spp. These were resistant to numerous different antibiotics.
+The data uncovered that this genus is a more commonplace pathogen than hitherto believed, with numerous infections/conditions caused by Comamonas spp. being severe and
+incapacitating. The purpose of this study was to give a general summation of infections
+caused by Comamonas spp., any underlying disorders/illnesses in patients that predispose
+them to infections with these bacteria and the antibiotic therapies that can be used for the
+management of these infections to aid medical professionals.
+2. Genus Comamonas
+Previously designated as Pseudomonas rRNA homology group III, the family Comamonadaceae now includes the genera Comamonas, Delftia and Acidovorax. The genus
+Comamonas, assigned to the Comamonadaceae lineage in the β-Proteobacteria, was originally proposed by Davis and Park [23] and the name validly published with the revival
+of the genus and the type species Comamonas terrigena by De Vos et al. [24]. In 1987, two
+Pseudomonas species, Pseudomonas acidovorans and Pseudomonas testosterone, were transferred
+to the genus Comamonas as Comamonas acidovorans and Comamonas testosteroni, respectively [24]. Based on a detailed 16S rRNA gene sequence-based phylogenetic study of the
+Comamona
+\cite{PMC9504711}.
+\end{quote}
+
 The Comamonas genus was also observed to be less abundant
 in intestinal microbiome of AD patients
 \cite{JianpingJia_Intestinal_Microflora_Changes_2022}
 suggesting the brain and intestinal abundances may correlate
 although not mentioned in a similar 2017 analysis
 \cite{Vogt_Kerby_DillMcFarland_microbiome_alterations_2017}
-or a recent review article
+or a 2018 review article
 \cite{Li_Zhu_Zhang_intestinal_microbiome_2018}.
-\mjmtol{check for name changes lol}
-
-Comamonas jiangduensis known for producing biosurfactant in
+\mjmtol{check for obsolete names etc  }
+Comamonas jiangduensis is known for producing biosurfactant in
 agricultural soil \cite{Sun_Zhang_Chen_Comamonas_jiangduensis_2013}
-They are infrequent human pathogens and some members were originally
-classified as Pseudomonas \cite{PMC9504711}.
-Comamonas acidovorans, as part of plant rhizobacteria, with tryptophan was observed to promote
-lettuce seedling root elongation \cite{Barazani2000} although
+Other species such as 
+Comamonas acidovorans, as part of plant rhizobacteria, 
+was observed to promote lettuce seedling root elongation 
+when tryptophan was included \cite{Barazani2000} although
 10mM tryptophan inhibited its growth. 
-
+Comamonas testosteroni makes a variety of tryptophan containing
+cyclic dipeptides with antimicrobial effects
+\cite{NISHANTHKUMAR201448}.
+Comamonas testosteroni and  Comamonas jiangduensis
+have some anti-nematode activity  
+\cite{Nazish_Fozia_Khattak_Antinematode_Activity_Abomasum_2021}.
 Comamonas genus is also considered metal tolerant 
 \cite{Caracciolo_Terenzi_Rhizosphere_Microbial_Communities_2021}.
 Potentially then low levels of heavy metals could favor
@@ -1087,42 +1136,38 @@ likely, its important to remember issues like this especially
 when the obvious interpretations don't lead to useful
 interventions or "go over like a lead balloon." 
 
-
-
 } % comamonas
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\cloacibacterium}{
 \mjmotu{Cloacibacterium}
 \mjmotuc{Increased in healthy}
-Cloacibacterium was found abundant in stem endosphere while
- Chinese Chives
-\cite{PMC8883035}.
+
 Isolated from municipal wastewater by 2006
 \cite{PMID16738108},
+Cloacibacterium normanense is 
+also listed as an endophyte of plants grown in textile waste
+water \cite{Shehzadi_Fatima_Imran_Ecology_bacterial_endophytes_2016}.
+Cloacibacterium was found abundant in stem endosphere of  
+ Chinese Chives \cite{PMC8883035}.
 Cloacibacterium normanense is electrochemically active
 \cite{Aparna_Meignanalakshmi_Comparison_power_generation_}
 \cite{Yee_Deutzmann_Spormann_Cultivating_electroactive_microbesfrom_field_}
 Along with P. putida, it is a component of breast milk
 (  Guatemalan mothers ) 
- and both
-have aromatic hydrocarbon degrading capabilities
+ and both also have aromatic hydrocarbon degrading capabilities
 \cite{PMC7907006}.
-Its route to the milk is controversial however
+Its route to the milk is controversial 
 \cite{10.3389/fmicb.2022.885588}.
-
-
-Cloacibacterium normanense is 
-listed as an endophyte of plants grown in textile waste
-water \cite{Shehzadi_Fatima_Imran_Ecology_bacterial_endophytes_2016}.
-
-\mjmtol{check direction and numbers with author, also not right next to Geobacillis not Geobacter lol. }
+It was also prominent in one study on breast cancer and another
+in lung cancer.
+\mjmtol{check direction and numbers with author, also not right 
+next to Geobacillis not Geobacter  }
 It was one of the most increased  genera in recurrence free
 patients' BAL fluid prior to resection of early stage
 non-small cell lung cancer 
 \cite{Patnaik_Cortes_Kannisto_Lower_airway_bacterial_microbiome_2021}
 .
-
-
 Cloacibacterium  was detected in an exploration of 
 breast microbiome and metabolites such as TMAO in triple negative
 breast cancer \cite{Wang_Rong_Zhao_microbial_metabolite_trimethylamine_2022}
@@ -1131,7 +1176,7 @@ lower than TMAO including lactate, Trp, and Trp derivatives.
 Exploration of their data may be useful 
 but I Was unable to determine from the supplementary
 information which samples were "IM." 
-The role of TMAO has been an matter of debate and has featured
+The role of TMAO has been a matter of debate and has featured
 some of the same issues related to causal role now being
 explored for brain microbes and metaboliates \cite{PMC5127123}. 
 The genus was also found differentially abundant in certain
@@ -1212,7 +1257,8 @@ the diseased brain is reduced in the supply
 of tryptophan or metabolites, benzoate or parents
 like tyrosine, while having an excess of
 iron and methanol. 
-Reduced levels of vitamin K and biotin may also be factors. 
+Reduced levels of vitamin K %and biotin 
+may also be factors. 
 
 
 Most or  all of these genera, notably Methylbacterium, Pseudomonas,
@@ -1295,25 +1341,10 @@ assess the situation \cite{10.3389/fneur.2019.00239}.
 
 \subsection{Tyrosine related}
 
-
-Repeated application of benzalkonium chlorides to the Lascaux Cave
-created an overgrowth dominated by Ralstonia and Pseudomonas
-\cite{Bastian2009}.
-This suggests a competitive advantage in aromatic rich settings 
 Benzoate consumption has a putative benefit in dementia
 \cite{Lin_Chen_Wang_Effect_Sodium_Benzoate_2021}
 and it could act to feed symbiotics or aid absorption
 of nutrients including tryptophan. 
-
-
-Studies relatiing P putida and aeruginosa response
-to aromtic amino acids as in cystic fibrosid sputum 
-have shown some common and species specific features. 
-\cite{PMC2876504}.
-Swimming and surfactant production as a function of
-amino acid exposuire have been investigated at least
-for P. aeruginosa \cite{PMC94731}.
-
 \mjmtol{ D-typroinse but only in combination with an antibiotic
 incredible synegty in kill rates 
 \cite{Jia_Yang_Xu_Mitigation_nitrate_2017}. D-amino acids 
@@ -1383,8 +1414,7 @@ which is common in AD \cite{PMC5144472}.
 
 Reduced vitamin K may be suspected
 due to the iron influx which may be due to angiopathy
-and defective coagulation.  Biotin may also
-be a factor. 
+and defective coagulation.  %Biotin may also be a factor. 
 
 Vitamin K in aprticular may not be fully appreaciated but
 it apparently important for CNS sulbatide regulation
@@ -1442,6 +1472,38 @@ the brain would be approaching that
 which existed at birth ( with vitamin K deficiency lol)
  or indeed conception.
 
+
+The case for infection-at-conception is greatly 
+facilitated by a recent work on the microbiome
+of endometrium and cervix compared to other 
+body surfaces. The endometrial organisms are ambiguous at
+the species level but include all of those here,
+
+\begin{quote}
+A BLAST analysis (i.e. comparison of a 16S rRNA gene sequence to those in
+the BLAST taxonomy database) revealed that the consensus sequence for OTU
+1 was identical to that of eight Acinetobacter type strains within seven
+species that have been isolated from clinical samples: A. bereziniae, A.
+colistiniresistens, A. gyllenbergii, A. junii, A. modestus, A. proteolyticus,
+and A. vivianii. A BLAST analysis of OTU 30 showed identical matches for
+multiple strains of Pseudomonas aeruginosa, and an analysis of OTU 19 revealed
+identical matches for multiple Pseudomonas species within the Pseudomonas
+putida group (P. monteilii, P. plecoglossicida, P. putida, and P. taiwanensis)77.
+A BLAST analysis of OTU 39 showed identical matches for six type strains
+within the species Cloacibacterium normanense, C. caeni, and C. rupense.
+Lastly, a BLAST analysis of OTU 29 (a member of the family Comamonadaceae)
+revealed identical matches for Comamonas jiangduensis and C. kerstersii.
+[...]
+Specifically, the bacterial profiles of cervical and endometrial samples were dominated by Acinetobacter (OTU 1), which accounted for 49.0% and 44.4% of sequences from these body sites, respectively. Other prominent taxa in the endometrium included Pseudomonas (OTUs 19 and 30), Cloacibacterium (OTU 39), Comamonadaceae (OTU 29), and Escherichia (OTU 21).
+
+\end{quote}
+\cite{Winters_Romero_Gervasi_Does_endometrial_cavity_2019}
+or implicating possibility of A junii ( OTU 1) , P. putida( OTU 19) ,
+C. normanense ( OTU 39) and C. jiangduensis ( OTU 29) or pretty
+much a possible exact match except for P thermotolerans
+and Diaphorobacter nitroreducens the two least overabundant on the list.  
+
+OTU 30 is assigned to P aeruginosa which was not found in brain results. 
 
 
 A junii original topic here, 
@@ -1935,7 +1997,7 @@ due to many factors. Ideally a rate equation
 should be written to account for all sources and sinks
 of "X" but even in that case both are likely to be
 controlled by feedback mechanisms. Tryptophan along
-with biotin have been shown to be exported in
+similar to restricted  biotin import,  have been shown to be exported in
 times expected to beneeded by the brain but
 transport into the CNS may be impeded. 
 

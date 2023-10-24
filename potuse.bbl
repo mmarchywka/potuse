@@ -160,6 +160,14 @@ P.~J.~M. Bouvet and P.~A.~D. Grimont.
   \href {http://dx.doi.org/10.1099/00207713-36-2-228}
   {\path{doi:10.1099/00207713-36-2-228}}.
 
+\bibitem{Boyanova_Cutibacterium_acnes_formerly_2023}
+Lyudmila Boyanova.
+\newblock {\it Cutibacterium acnes} (formerly {\it propionibacterium acnes}):
+  friend or foe?
+\newblock {\em Future Microbiology}, 18, 2023.
+\newblock Available from: \url{http://dx.doi.org/10.2217/fmb-2022-0191}, \href
+  {http://dx.doi.org/10.2217/fmb-2022-0191} {\path{doi:10.2217/fmb-2022-0191}}.
+
 \bibitem{10.3389/fmicb.2021.673845}
 Holger Br\"{u}ggemann, Llanos Salar-Vidal, Harald~M. Gollnick, and Rolf Lood.
 \newblock A janus-faced bacterium: Host-beneficial and -detrimental roles of
@@ -286,6 +294,19 @@ Yau-Jan Chyan, Burkhard Poeggeler, Rawhi~A. Omar, Daniel~G. Chain, Blas
 \newblock Available from: \url{http://dx.doi.org/10.1074/jbc.274.31.21937},
   \href {http://dx.doi.org/10.1074/jbc.274.31.21937}
   {\path{doi:10.1074/jbc.274.31.21937}}.
+
+\bibitem{PMC8478231}
+Jan Claesen, Jennifer~B Spagnolo, Stephany Flores~Ramos, Kenji~L Kurita,
+  Allyson~L Byrd, Alexander~A Aksenov, Alexey~V Melnik, Weng~R Wong, Shuo Wang,
+  Ryan~D Hernandez, Mohamed~S Donia, Pieter~C Dorrestein, Heidi~H Kong, Julia~A
+  Segre, Roger~G Linington, Michael~A Fischbach, and Katherine~P Lemon.
+\newblock A cutibacterium acnes antibiotic modulates human skin microbiota
+  composition in hair follicles.
+\newblock {\em Science translational medicine}, Nov 2020.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478231/}, \href
+  {http://dx.doi.org/10.1126/scitranslmed.aay5445}
+  {\path{doi:10.1126/scitranslmed.aay5445}}.
 
 \bibitem{Coates_Uranium_Immobilization_through_2009}
 John~D. Coates.
@@ -1105,6 +1126,28 @@ Koji Narui, Norihisa Noguchi, Aya Saito, Kazuhiro Kakimi, Noboru Motomura,
   \url{https://www.jstage.jst.go.jp/article/bpb/32/1/32_1_41/_article/-char/ja/},
   \href {http://dx.doi.org/10.1248/bpb.32.41} {\path{doi:10.1248/bpb.32.41}}.
 
+\bibitem{Nazish_Fozia_Khattak_Antinematode_Activity_Abomasum_2021}
+Asfa Nazish, Fozia, Baharullah Khattak, Taj~Ali Khan, Ijaz Ahmad, Riaz Ullah,
+  Ahmed Bari, Majid~M. Asmari, Hafiz~M. Mahmood, Muhammad Sohaib, Ahmad~El
+  Askary, Attalla~F. El-kott, and Mohamed~M. Abdel-Daim.
+\newblock Antinematode activity of abomasum bacterial culture filtrates against
+  haemonchus contortus in small ruminants.
+\newblock {\em Animals}, 11, 2021.
+\newblock Available from: \url{http://dx.doi.org/10.3390/ani11061843}, \href
+  {http://dx.doi.org/10.3390/ani11061843} {\path{doi:10.3390/ani11061843}}.
+
+\bibitem{NISHANTHKUMAR201448}
+S.~{Nishanth Kumar}, C.~Mohandas, and Bala Nambisan.
+\newblock Purification, structural elucidation and bioactivity of tryptophan
+  containing diketopiperazines, from comamonas testosteroni associated with a
+  rhabditid entomopathogenic nematode against major human-pathogenic bacteria.
+\newblock {\em Peptides}, 53:48--58, 2014.
+\newblock Invertebrate Neuropeptides XIV.
+\newblock Available from:
+  \url{https://www.sciencedirect.com/science/article/pii/S019697811300332X},
+  \href {http://dx.doi.org/https://doi.org/10.1016/j.peptides.2013.09.019}
+  {\path{doi:https://doi.org/10.1016/j.peptides.2013.09.019}}.
+
 \bibitem{Northuis10.1212/WNL.0000000000207747}
 Carin Northuis, Elizabeth Bell, Pamela Lutsey, Kristen~M George, Rebecca~F.
   Gottesman, Tom~H. Mosley, Eric~A Whitsel, and Kamakshi Lakshminarayan.
@@ -1299,6 +1342,15 @@ Steven~T. Proulx and Britta Engelhardt.
 \newblock {\em Journal of Internal Medicine}, 292, 2022.
 \newblock Available from: \url{http://dx.doi.org/10.1111/joim.13469}, \href
   {http://dx.doi.org/10.1111/joim.13469} {\path{doi:10.1111/joim.13469}}.
+
+\bibitem{Rao_Young_JacksonCowan_Post_Inflammatory_Hypopigmentation_Review_2023}
+Medha Rao, Katherine Young, Ladonya Jackson-Cowan, Arianne Kourosh, and
+  Nicholas Theodosakis.
+\newblock Post-inflammatory hypopigmentation: Review of the etiology, clinical
+  manifestations, and treatment options.
+\newblock {\em Journal of Clinical Medicine}, 12, 2023.
+\newblock Available from: \url{http://dx.doi.org/10.3390/jcm12031243}, \href
+  {http://dx.doi.org/10.3390/jcm12031243} {\path{doi:10.3390/jcm12031243}}.
 
 \bibitem{Renga_DOnofrio_Pariano_Bridging_host_microbiota_2023}
 Giorgia Renga, Fiorella D'Onofrio, Marilena Pariano, Roberta Galarini, Carolina
@@ -1738,6 +1790,17 @@ B.~Widner, F.~Leblhuber, J.~Walli, G.~P. Tilz, U.~Demel, and D.~Fuchs.
 \newblock {\em Journal of Neural Transmission}, 107(3):343--353, Mar 2000.
 \newblock Available from: \url{https://doi.org/10.1007/s007020050029}, \href
   {http://dx.doi.org/10.1007/s007020050029} {\path{doi:10.1007/s007020050029}}.
+
+\bibitem{Winters_Romero_Gervasi_Does_endometrial_cavity_2019}
+Andrew~D. Winters, Roberto Romero, Maria~Teresa Gervasi, Nardhy Gomez-Lopez,
+  Maria~Rosa Tran, Valeria Garcia-Flores, Percy Pacora, Eunjung Jung, Sonia~S.
+  Hassan, Chaur-Dong Hsu, and Kevin~R. Theis.
+\newblock Does the endometrial cavity have a molecular microbial signature?
+\newblock {\em Scientific Reports}, 9, 07 2019.
+\newblock Available from:
+  \url{https://www.nature.com/articles/s41598-019-46173-0}, \href
+  {http://dx.doi.org/10.1038/s41598-019-46173-0}
+  {\path{doi:10.1038/s41598-019-46173-0}}.
 
 \bibitem{PMID37848036}
 Andrea~C Wong, Ashwarya~S Devason, Iboro~C Umana, Timothy~O Cox, Lenka
