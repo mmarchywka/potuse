@@ -438,8 +438,6 @@ INPUT /home/documents/latex/share/includes/disclaimer-gaslight.tex
 INPUT /home/documents/latex/share/includes/disclaimer-gaslight.tex
 INPUT /home/documents/latex/share/includes/disclaimer-status.tex
 INPUT /home/documents/latex/share/includes/disclaimer-status.tex
-INPUT ./keep/baselinevitamins.tex
-INPUT ./keep/baselinevitamins.tex
 INPUT ./releases.tex
 INPUT ./releases.tex
 INPUT ./potuse.bundle_checksums

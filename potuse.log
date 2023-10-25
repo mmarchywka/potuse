@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  23 OCT 2023 20:45
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  24 OCT 2023 20:36
  restricted system commands enabled.
  file:line:error style messages enabled.
 **potuse.tex
@@ -1277,12 +1277,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 266.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 309--367
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 312--371
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--367
+Underfull \hbox (badness 10000) in paragraph at lines 312--371
 
  []
 
@@ -1293,12 +1293,12 @@ Overfull \hbox (5.0pt too wide) detected at line 12
 
 
 Overfull \hbox (5.0pt too wide) detected at line 13
- \TU/lmr/m/n/10 10
+ \TU/lmr/m/n/10 11
  []
 
 
 Overfull \hbox (5.0pt too wide) detected at line 14
- \TU/lmr/m/n/10 10
+ \TU/lmr/m/n/10 11
  []
 
 
@@ -1308,7 +1308,7 @@ Overfull \hbox (5.0pt too wide) detected at line 15
 
 
 Overfull \hbox (5.0pt too wide) detected at line 16
- \TU/lmr/m/n/10 12
+ \TU/lmr/m/n/10 13
  []
 
 
@@ -1333,7 +1333,7 @@ Overfull \hbox (5.0pt too wide) detected at line 20
 
 
 Overfull \hbox (5.0pt too wide) detected at line 21
- \TU/lmr/m/n/10 24
+ \TU/lmr/m/n/10 25
  []
 
 
@@ -1368,7 +1368,7 @@ Overfull \hbox (5.0pt too wide) detected at line 28
 
 
 Overfull \hbox (5.0pt too wide) detected at line 29
- \TU/lmr/m/n/10 28
+ \TU/lmr/m/n/10 27
  []
 
 )
@@ -1377,206 +1377,205 @@ Overfull \hbox (5.0pt too wide) detected at line 29
 \openout6 = potuse.toc
  [2] Excluding 'comment' comment. [3]
 
-Package hyperref Warning: Ignoring empty anchor on input line 598.
+Package hyperref Warning: Ignoring empty anchor on input line 602.
 
 Excluding 'comment' comment. [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1224
 []\TU/lmr/m/n/10 The Co-ma-monas genus was also ob-served to be less abun-dant 
 in in-testi-nal mi-cro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1224
 \TU/lmr/m/n/10 biome of AD pa-tients [[]] sug-gest-ing the brain and in-testi-n
 al abun-dances may cor-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1224
 \TU/lmr/m/n/10 late al-though not men-tioned in a sim-i-lar 2017 anal-y-sis [[]
 ] or a 2018 re-view ar-ti-cle [[]].
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1201--1201
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1224--1224
 []
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1203--1203
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1226--1226
 []
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1203--1203
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1226--1226
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1203--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
 
  []
 
 [6
 Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1352
-[]\TU/lmr/m/n/10 Ben-zoate con-sump-tion has a pu-ta-tive ben-e-fit in de-men-t
-ia [[]] and it could
+]
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1226--1226
+[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1352
-\TU/lmr/m/n/10 act to feed sym-bi-otics or aid ab-sorp-tion of nu-tri-ents in-c
-lud-ing tryp-to-phan.
- []
-
-
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1344--1352
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1352
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 1374--1389
+[7] [8]
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1392--1393
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1419--1433
 []\TU/lmr/m/n/10 Sup-ple-ment us-age re-lated to SAM may need to be more care-f
 ully con-sid-ered [[]].
  []
 
 
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1374--1389
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1419--1433
 []
  []
 
 [9] [10]
-Overfull \hbox (23.45999pt too wide) in paragraph at lines 1666--1667
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1666--1667
-
- []
-
-
-Overfull \hbox (13.45999pt too wide) in paragraph at lines 1711--1748
+Overfull \hbox (13.45999pt too wide) in paragraph at lines 1643--1662
 []
  []
 
-[11] Excluding 'comment' comment. [12] (./potuse.bbl [13] [14] [15] [16]
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 934--943
+
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1662
+
+ []
+
+[11]
+Overfull \hbox (23.45999pt too wide) in paragraph at lines 1734--1735
+[][]
+ []
+
+Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment. [12] (./potuse.bbl
+[13] [14] [15] [16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 992--1001
 \TU/lmtt/m/n/9 Vitamin_K_Literature_in_the_Conext_of_a_non-[]Monotonic_Response
 _Curve_Local_vs_Global_Optima_and_other_
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 945--952
+Underfull \hbox (badness 5316) in paragraph at lines 1003--1010
 []\TU/lmr/m/n/9 M.J. Marchy-wka.  On the age dis-tri-bu-tion of sars-cov-2 pa-t
 ients.  Tech-ni-cal Re-port MJM-2020-002-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 945--952
+Underfull \hbox (badness 2600) in paragraph at lines 1003--1010
 \TU/lmr/m/n/9 0.10, not in-sti-tu-tion-al-ized , in-de-pen-dent, 306 Charles Co
 x , Can-ton GA 30115, 7 2020.  Ver-sion 0.10
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 945--952
+Underfull \hbox (badness 1748) in paragraph at lines 1003--1010
 \TU/lmr/m/n/9 , may change sign-f-i-cantly if less than 1.00.  Avail-able from:
  [][]$\TU/lmtt/m/n/9 https://www.linkedin.com/posts/marchywka_
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 972--980
+Underfull \hbox (badness 4927) in paragraph at lines 1030--1038
 []\TU/lmr/m/n/9 M.J. Marchy-wka.  Sup-ple-ment us-age in-clud-ing vi-ta-min k b
 y a heart-worm pos-i-tive preg-nant pit bull
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 972--980
+Underfull \hbox (badness 2384) in paragraph at lines 1030--1038
 \TU/lmr/m/n/9 and her pup-pies.  Tech-ni-cal Re-port MJM-2021-003, not in-sti-t
 u-tion-al-ized , in-de-pen-dent, 306 Charles Cox
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 972--980
+Underfull \hbox (badness 4608) in paragraph at lines 1030--1038
 \TU/lmr/m/n/9 , Can-ton GA 30115, 05 2021.  Ver-sion 0.50 , may change sign-f-i
 -cantly if less than 1.00.  Avail-
  []
 
-[18]
-Underfull \hbox (badness 6893) in paragraph at lines 1079--1087
+
+Underfull \hbox (badness 6893) in paragraph at lines 1137--1145
 []\TU/lmr/m/n/9 Emilia Moraw-iec, MichaUx0142[bad vv=322] Cz-er-wiUx0144[bad ch
 ar vv=324]ski, Anna Bed-narska Cz-er-
  []
 
-
-Underfull \hbox (badness 4531) in paragraph at lines 1120--1128
+[19]
+Underfull \hbox (badness 4531) in paragraph at lines 1178--1186
 []\TU/lmr/m/n/9 Koji Narui, Nori-hisa Noguchi, Aya Saito, Kazuhiro Kakimi, Nobo
 ru Mo-to-mura, Kinya Kubo, Shinichi
  []
 
-[19] [20]
-Underfull \hbox (badness 2065) in paragraph at lines 1440--1446
+[20] [21]
+Underfull \hbox (badness 2065) in paragraph at lines 1525--1531
 []\TU/lmr/m/n/9 Nikki Schul-tek.  Nikki schul-tek on linkedin: Could a break-do
 wn in the brains net-works al-low in-fec-tions
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 1440--1446
+Underfull \hbox (badness 3907) in paragraph at lines 1525--1531
 \TU/lmr/m/n/9 to con-tribute touni-codeel-lip-sis.  09 2023.  Avail-able from: 
 [][]$\TU/lmtt/m/n/9 https://www.linkedin.com/feed/update/urn:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1440--1446
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1531
 \TU/lmtt/m/n/9 li:activity:7108409998031941632/?commentUrn=urn%3Ali%3Acomment%3
 A(activity%3A7108409998031941632%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1440--1446
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1531
 \TU/lmtt/m/n/9 2C7108889485295157248)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(
 7108889485295157248%2Curn%3Ali%
  []
 
-[21] [22] [23]) [24] [25] Excluding 'comment' comment.
+[22] [23] [24]) [25] Excluding 'comment' comment. Excluding 'comment' comment.
 (/home/documents/latex/share/includes/disclaimer-gaslight.tex)
-(/home/documents/latex/share/includes/disclaimer-status.tex)
-(./keep/baselinevitamins.tex [26]) [27] (./releases.tex)
-Overfull \hbox (10.0pt too wide) in paragraph at lines 2089--2094
+(/home/documents/latex/share/includes/disclaimer-status.tex) [26]
+(./releases.tex)
+Overfull \hbox (10.0pt too wide) in paragraph at lines 2159--2164
 []$[]$ 
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 2106.
-(./potuse.bundle_checksums [28]) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2107.
+put line 2176.
+(./potuse.bundle_checksums [27]) [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2177.
  (./potuse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2177.
 Package rerunfilecheck Info: File `potuse.out' has not changed.
-(rerunfilecheck)             Checksum: 5AF24EBB717E1D55D0C06BC4343BFA35;4715.
+(rerunfilecheck)             Checksum: 7C224597B253832D0D8719FFEBC70075;4720.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32925 strings out of 481365
- 596197,1144653 words of node,token memory allocated
- 1883 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 133 attribute, 80 glue_spe
-c, 133 attribute_list, 126 pdf_action nodes
-   avail lists: 1:1,2:6489,3:985,4:247,5:14171,6:97,7:17228,8:298,9:28436,10:36,
-11:1516
- 48426 multiletter control sequences out of 65536+600000
+ 32955 strings out of 481365
+ 596189,1144653 words of node,token memory allocated
+ 1943 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 139 attribute, 80 glue_spe
+c, 139 attribute_list, 132 pdf_action nodes
+   avail lists: 1:2,2:6907,3:955,4:245,5:15111,6:96,7:17265,8:280,9:30312,10:35,
+11:1618
+ 48457 multiletter control sequences out of 65536+600000
  103 fonts using 8931187 bytes
- 79i,12n,75p,538b,1609s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 79i,12n,75p,538b,1665s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf
 /fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/
 public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroma
@@ -1590,10 +1589,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb>
-Output written on potuse.pdf (29 pages, 322154 bytes).
+Output written on potuse.pdf (28 pages, 328802 bytes).
 
-PDF statistics: 1404 PDF objects out of 1440 (max. 8388607)
- 1320 compressed objects within 14 object streams
- 308 named destinations out of 1000 (max. 131072)
+PDF statistics: 1450 PDF objects out of 1728 (max. 8388607)
+ 1367 compressed objects within 14 object streams
+ 316 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -5,25 +5,25 @@
 \contentsline {section}{\numberline {2}The Extremely Differentially Abundant OTU's }{4}{section*.3}%
 \contentsline {section}{\numberline {3} Microbes, Nutrients, and Disease }{8}{section*.4}%
 \contentsline {subsection}{\numberline {3.1}Tryptophan related}{8}{section*.5}%
-\contentsline {subsection}{\numberline {3.2}Tyrosine related}{8}{section*.6}%
+\contentsline {subsection}{\numberline {3.2}Tyrosine related}{9}{section*.6}%
 \contentsline {subsection}{\numberline {3.3}Histidine related}{9}{section*.7}%
 \contentsline {subsection}{\numberline {3.4}Methanol related}{9}{section*.8}%
 \contentsline {subsection}{\numberline {3.5}Iron and Vitamin K related}{9}{section*.9}%
 \contentsline {subsection}{\numberline {3.6}Exposure, Vulnerability, and Uptake into CNS }{10}{section*.10}%
-\contentsline {section}{\numberline {4}Discussion }{10}{section*.11}%
-\contentsline {subsection}{\numberline {4.1}Informing Interventions }{10}{section*.12}%
+\contentsline {section}{\numberline {4}Discussion }{11}{section*.11}%
+\contentsline {subsection}{\numberline {4.1}Informing Interventions }{11}{section*.12}%
 \contentsline {subsection}{\numberline {4.2} Plant Symbionts in Brain : Coincidence or Nurse Bacteria ? }{12}{section*.13}%
-\contentsline {section}{\numberline {5}Conclusion}{12}{section*.14}%
+\contentsline {section}{\numberline {5}Conclusion}{13}{section*.14}%
 \contentsline {section}{\numberline {6}Supplemental Information}{13}{section*.15}%
 \contentsline {subsection}{\numberline {6.1}Computer Code}{13}{section*.16}%
 \contentsline {section}{\numberline {7}Bibliography}{13}{section*.17}%
 \contentsline {section}{\numberline {}References}{13}{section*.18}%
-\contentsline {section}{\numberline {}Acknowledgments}{24}{section*.19}%
+\contentsline {section}{\numberline {}Acknowledgments}{25}{section*.19}%
 \appendix 
 \contentsline {section}{\numberline {A} Statement of Conflicts }{26}{section*.20}%
 \contentsline {section}{\numberline {B}About the Authors}{26}{section*.21}%
 \contentsline {section}{\numberline {C}Interpretation Issues- General and Specific }{26}{section*.22}%
 \contentsline {section}{\numberline {D}Symbols, Abbreviations and Colloquialisms}{26}{section*.23}%
 \contentsline {section}{\numberline {E}General caveats and disclaimer }{26}{section*.24}%
-\contentsline {section}{\numberline {F} A basline nutrient outline }{27}{section*.25}%
-\contentsline {section}{\numberline {G}Citing this as a tech report or white paper }{28}{section*.26}%
+\contentsline {section}{\numberline {F} A baseline nutrient outline }{27}{section*.25}%
+\contentsline {section}{\numberline {G}Citing this as a tech report or white paper }{27}{section*.26}%

@@ -137,6 +137,14 @@ Petra Beznoskov, Laure Bidou, Olivier Namy, and Leo~Shivaya Valek.
   \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8136774/}, \href
   {http://dx.doi.org/10.1093/nar/gkab315} {\path{doi:10.1093/nar/gkab315}}.
 
+\bibitem{PMID16424144}
+Eva Blomstrand.
+\newblock A role for branched-chain amino acids in reducing central fatigue.
+\newblock {\em The Journal of nutrition}, pages 544S--547S, Feb 2006.
+\newblock Available from: \url{https://pubmed.ncbi.nlm.nih.gov/16424144/},
+  \href {http://dx.doi.org/10.1093/jn/136.2.544S}
+  {\path{doi:10.1093/jn/136.2.544S}}.
+
 \bibitem{Blumenthal_Steger_Einfalt_Methanol_Mitigation_during_Manufacturing_2021}
 Patrik Blumenthal, Marc Steger, Daniel Einfalt, J\"{o}rg Rieke-Zapp,
   Andr\`{e}s~Quintanilla Bellucci, Katharina Sommerfeld, Steffen Schwarz, and
@@ -295,6 +303,14 @@ Yau-Jan Chyan, Burkhard Poeggeler, Rawhi~A. Omar, Daniel~G. Chain, Blas
   \href {http://dx.doi.org/10.1074/jbc.274.31.21937}
   {\path{doi:10.1074/jbc.274.31.21937}}.
 
+\bibitem{Ciernikova_Sevcikova_Stevurkova_Tumor_microbiome_integral_2022}
+Sona Ciernikova, Aneta Sevcikova, Viola Stevurkova, and Michal Mego.
+\newblock Tumor microbiome - an integral part of the tumor microenvironment.
+\newblock {\em Frontiers in Oncology}, 12, 11 2022.
+\newblock Available from: \url{http://dx.doi.org/10.3389/fonc.2022.1063100},
+  \href {http://dx.doi.org/10.3389/fonc.2022.1063100}
+  {\path{doi:10.3389/fonc.2022.1063100}}.
+
 \bibitem{PMC8478231}
 Jan Claesen, Jennifer~B Spagnolo, Stephany Flores~Ramos, Kenji~L Kurita,
   Allyson~L Byrd, Alexander~A Aksenov, Alexey~V Melnik, Weng~R Wong, Shuo Wang,
@@ -343,6 +359,17 @@ Oriol de~Fabregues, Maria Selles, David Ramos-Vicente, Gerard Roch, Miquel
 \newblock Available from: \url{https://pubmed.ncbi.nlm.nih.gov/37741513/},
   \href {http://dx.doi.org/10.1016/j.nbd.2023.106308}
   {\path{doi:10.1016/j.nbd.2023.106308}}.
+
+\bibitem{deLeeuw_deSmit_Oossanen_Methanol_Based_Chain_Elongation_2020}
+Kasper~D. de~Leeuw, Sanne~M. de~Smit, Sabine~van Oossanen, Marinus~J. Moerland,
+  Cees J.~N. Buisman, and David P. B. T.~B. Strik.
+\newblock Methanol-based chain elongation with acetate to n-butyrate and
+  isobutyrate at varying selectivities dependent on ph.
+\newblock {\em ACS Sustainable Chemistry \&amp; Engineering}, 8, 06 2020.
+\newblock Available from:
+  \url{http://dx.doi.org/10.1021/acssuschemeng.0c00907}, \href
+  {http://dx.doi.org/10.1021/acssuschemeng.0c00907}
+  {\path{doi:10.1021/acssuschemeng.0c00907}}.
 
 \bibitem{PMC4763327}
 Rocheli de~Souza, Adriana Ambrosini, and Luciane~M.P. Passaglia.
@@ -468,6 +495,17 @@ Kan Gao, Chun-long Mu, Aitak Farzi, and Wei-yun Zhu.
   {http://dx.doi.org/10.1093/advances/nmz127}
   {\path{doi:10.1093/advances/nmz127}}.
 
+\bibitem{Giuffre_Campigotto_Campisciano_story_liver_2020}
+Mauro Giuffr\`{e}, Michele Campigotto, Giuseppina Campisciano, Manola Comar,
+  and Lory~Saveria Croc\`{e}.
+\newblock A story of liver and gut microbes: how does the intestinal flora
+  affect liver disease? a review of the literature.
+\newblock {\em American Journal of Physiology-Gastrointestinal and Liver
+  Physiology}, 318, 05 2020.
+\newblock Available from: \url{http://dx.doi.org/10.1152/ajpgi.00161.2019},
+  \href {http://dx.doi.org/10.1152/ajpgi.00161.2019}
+  {\path{doi:10.1152/ajpgi.00161.2019}}.
+
 \bibitem{GomezGodinez_AguirreNoyola_MartinezRomero_Look_Plant_2023}
 Lorena~Jacqueline G\'{o}mez-God\'{i}nez, Jos\'{e}~Luis Aguirre-Noyola,
   Esperanza Mart\'{i}nez-Romero, Ram\'{o}n~Ignacio Arteaga-Garibay, Javier
@@ -533,6 +571,16 @@ George~T Grossberg.
   \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4052996/}, \href
   {http://dx.doi.org/10.1016/S0011-393X(03)00059-6}
   {\path{doi:10.1016/S0011-393X(03)00059-6}}.
+
+\bibitem{Hamamah_Aghazarian_Nazaryan_Role_Microbiota_2022}
+Sevag Hamamah, Armin Aghazarian, Anthony Nazaryan, Andras Hajnal, and Mihai
+  Covasa.
+\newblock Role of microbiota-gut-brain axis in regulating dopaminergic
+  signaling.
+\newblock {\em Biomedicines}, 10, 2022.
+\newblock Available from: \url{http://dx.doi.org/10.3390/biomedicines10020436},
+  \href {http://dx.doi.org/10.3390/biomedicines10020436}
+  {\path{doi:10.3390/biomedicines10020436}}.
 
 \bibitem{PMC1913468}
 Susse~Kirkelund Hansen, Janus~J. Haagensen, Morten Gjermansen, Thomas~Martini
@@ -887,6 +935,16 @@ C.~M. Manaia.
 \newblock Available from: \url{http://dx.doi.org/10.1099/ijs.0.02059-0}, \href
   {http://dx.doi.org/10.1099/ijs.0.02059-0} {\path{doi:10.1099/ijs.0.02059-0}}.
 
+\bibitem{Manaia_BMoore_Pseudomonas_thermotolerans_2002}
+C\'{e}lia~M Manaia and Edward~R B~Moore.
+\newblock Pseudomonas thermotolerans sp. nov., a thermotolerant species of the
+  genus pseudomonas sensu stricto.
+\newblock {\em International Journal of Systematic and Evolutionary
+  Microbiology}, 52, 11 2002.
+\newblock Available from: \url{http://dx.doi.org/10.1099/00207713-52-6-2203},
+  \href {http://dx.doi.org/10.1099/00207713-52-6-2203}
+  {\path{doi:10.1099/00207713-52-6-2203}}.
+
 \bibitem{mmarchywka-MJM-2021-007-.1-table-rg}
 Mike~J Marchywka.
 \newblock Update to covid-19 age distribution notes.
@@ -1162,6 +1220,15 @@ Carin Northuis, Elizabeth Bell, Pamela Lutsey, Kristen~M George, Rebecca~F.
   \href {http://dx.doi.org/10.1212/WNL.0000000000207747}
   {\path{doi:10.1212/WNL.0000000000207747}}.
 
+\bibitem{Ogawa_Shimizu_Ishii_Uniqueness_Tryptophan_2023}
+Mutsumi Ogawa, Fumiko Shimizu, Yukie Ishii, Tetsuya Takao, and Akikazu Takada.
+\newblock Uniqueness of tryptophan in the transport system in the brain and
+  peripheral tissues.
+\newblock {\em Food and Nutrition Sciences}, 14, 2023.
+\newblock Available from: \url{http://dx.doi.org/10.4236/fns.2023.145026},
+  \href {http://dx.doi.org/10.4236/fns.2023.145026}
+  {\path{doi:10.4236/fns.2023.145026}}.
+
 \bibitem{PMID25078296}
 S~M O'Mahony, G~Clarke, Y~E Borre, T~G Dinan, and J~F Cryan.
 \newblock Serotonin, tryptophan metabolism and the brain-gut-microbiome axis.
@@ -1335,6 +1402,15 @@ R.~J. PORTER, B.~S. LUNN, and J.~T. O'BRIEN.
   \href {http://dx.doi.org/10.1017/s0033291702006906}
   {\path{doi:10.1017/s0033291702006906}}.
 
+\bibitem{PMC93692}
+Birgit~M. Pr, Kevin~P. Francis, Felix von Stetten, and Siegfried Scherer.
+\newblock Correlation of 16s ribosomal dna signature sequences with
+  temperature-dependent growth rates of mesophilic and psychrotolerant strains
+  of the bacillus cereus group.
+\newblock {\em Journal of Bacteriology}, pages 2624--30, Apr 1999.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC93692/}.
+
 \bibitem{Proulx_Engelhardt_Central_nervous_system_zoning_2022}
 Steven~T. Proulx and Britta Engelhardt.
 \newblock Central nervous system zoning: How brain barriers establish
@@ -1342,6 +1418,15 @@ Steven~T. Proulx and Britta Engelhardt.
 \newblock {\em Journal of Internal Medicine}, 292, 2022.
 \newblock Available from: \url{http://dx.doi.org/10.1111/joim.13469}, \href
   {http://dx.doi.org/10.1111/joim.13469} {\path{doi:10.1111/joim.13469}}.
+
+\bibitem{PMC6756889}
+Yaoyu Pu, Lijia Chang, Youge Qu, Siming Wang, Kai Zhang, and Kenji Hashimoto.
+\newblock Antibiotic-induced microbiome depletion protects against mptp-induced
+  dopaminergic neurotoxicity in the brain.
+\newblock {\em Aging (Albany NY)}, pages 6915--29, 09 2019.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6756889/}, \href
+  {http://dx.doi.org/10.18632/aging.102221} {\path{doi:10.18632/aging.102221}}.
 
 \bibitem{Rao_Young_JacksonCowan_Post_Inflammatory_Hypopigmentation_Review_2023}
 Medha Rao, Katherine Young, Ladonya Jackson-Cowan, Arianne Kourosh, and
@@ -1616,6 +1701,21 @@ Cheril Tapia-Rojas, Carolina~B. Lindsay, Carla Montecinos-Oliva, Macarena~S.
   \href {http://dx.doi.org/10.1186/s13024-015-0057-0}
   {\path{doi:10.1186/s13024-015-0057-0}}.
 
+\bibitem{THIRION2023283}
+Florence Thirion, Helene Speyer, Tue~Haldor Hansen, Trine Nielsen, Yong Fan,
+  Emmanuelle {Le Chatelier}, S\'{e}bastien Fromentin, Magali Berland, Florian
+  {Plaza O\~{n}ate}, Nicolas Pons, Nathalie Galleron, Florence Levenez, Lajos
+  Mark'{o}, Till Birkner, Torben Jorgensen, Sofia~K. Forslund, Henrik
+  Vestergaard, Torben Hansen, Merete Nordentoft, Ole Mors, Michael~E. Benros,
+  Oluf Pedersen, and Stanislav~D. Ehrlich.
+\newblock Alteration of gut microbiome in patients with schizophrenia indicates
+  links between bacterial tyrosine biosynthesis and cognitive dysfunction.
+\newblock {\em Biological Psychiatry Global Open Science}, 3(2):283--291, 2023.
+\newblock Available from:
+  \url{https://www.sciencedirect.com/science/article/pii/S2667174322000143},
+  \href {http://dx.doi.org/https://doi.org/10.1016/j.bpsgos.2022.01.009}
+  {\path{doi:https://doi.org/10.1016/j.bpsgos.2022.01.009}}.
+
 \bibitem{Tong_Peng_Gu_LncRNA_MEG3_alleviates_high_2019}
 Ping Tong, Qing-Hua Peng, Li-Min Gu, Wei-Wei Xie, and Wen-Jie Li.
 \newblock Lncrna-meg3 alleviates high glucose induced inflammation and
@@ -1672,6 +1772,24 @@ Christopher~H. van Dyck, Chad~J. Swanson, Paul Aisen, Randall~J. Bateman,
 \newblock {\em New England Journal of Medicine}, 388, 01 2023.
 \newblock Available from: \url{http://dx.doi.org/10.1056/nejmoa2212948}, \href
   {http://dx.doi.org/10.1056/nejmoa2212948} {\path{doi:10.1056/nejmoa2212948}}.
+
+\bibitem{PMC1156566}
+G~van Hall, J~S Raaymakers, W~H Saris, and A~J Wagenmakers.
+\newblock Ingestion of branched-chain amino acids and tryptophan during
+  sustained exercise in man: failure to affect performance.
+\newblock {\em The Journal of Physiology}, pages 789--94, Aug 1995.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1156566/}.
+
+\bibitem{vanKessel_Frye_ElGendy_bacterial_tyrosine_decarboxylases_2019}
+Sebastiaan~P. van Kessel, Alexandra~K. Frye, Ahmed~O. El-Gendy, Maria Castejon,
+  Ali Keshavarzian, Gertjan~van Dijk, and Sahar~El Aidy.
+\newblock Gut bacterial tyrosine decarboxylases restrict levels of levodopa in
+  the treatment of parkinson's disease.
+\newblock {\em Nature Communications}, 10, 2019.
+\newblock Available from: \url{http://dx.doi.org/10.1038/s41467-019-08294-y},
+  \href {http://dx.doi.org/10.1038/s41467-019-08294-y}
+  {\path{doi:10.1038/s41467-019-08294-y}}.
 
 \bibitem{Vaneechoutte_Nemec_Kampfer_Acinetobacter_2015}
 Mario Vaneechoutte, Alexandr Nemec, Peter K\"{a}mpfer, Piet Cools, and Georges
