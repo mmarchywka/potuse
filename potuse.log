@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  24 OCT 2023 20:36
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.5.31)  24 OCT 2023 21:08
  restricted system commands enabled.
  file:line:error style messages enabled.
 **potuse.tex
@@ -1549,30 +1549,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1525--1531
 (/home/documents/latex/share/includes/disclaimer-gaslight.tex)
 (/home/documents/latex/share/includes/disclaimer-status.tex) [26]
 (./releases.tex)
-Overfull \hbox (10.0pt too wide) in paragraph at lines 2159--2164
+Overfull \hbox (312.53806pt too wide) in paragraph at lines 2145--2151
+ []$[]$ 
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 2160--2165
 []$[]$ 
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 2176.
+put line 2177.
 (./potuse.bundle_checksums [27]) [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2178.
  (./potuse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2178.
 Package rerunfilecheck Info: File `potuse.out' has not changed.
 (rerunfilecheck)             Checksum: 7C224597B253832D0D8719FFEBC70075;4720.
 )
 
 Here is how much of LuaTeX's memory you used:
  32955 strings out of 481365
- 596189,1144653 words of node,token memory allocated
+ 596174,1144653 words of node,token memory allocated
  1943 words of node memory still in use:
    5 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 139 attribute, 80 glue_spe
 c, 139 attribute_list, 132 pdf_action nodes
-   avail lists: 1:2,2:6907,3:955,4:245,5:15111,6:96,7:17265,8:280,9:30312,10:35,
-11:1618
+   avail lists: 1:1,2:7899,3:956,4:246,5:17305,6:91,7:17529,8:280,9:34752,10:35,
+11:1854
  48457 multiletter control sequences out of 65536+600000
  103 fonts using 8931187 bytes
  79i,12n,75p,538b,1665s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1589,10 +1594,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb>
-Output written on potuse.pdf (28 pages, 328802 bytes).
+Output written on potuse.pdf (28 pages, 329928 bytes).
 
-PDF statistics: 1450 PDF objects out of 1728 (max. 8388607)
- 1367 compressed objects within 14 object streams
+PDF statistics: 1455 PDF objects out of 1728 (max. 8388607)
+ 1372 compressed objects within 14 object streams
  316 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 
